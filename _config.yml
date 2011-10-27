@@ -1,2 +1,3 @@
-auto: false
+auto:     false
+pygments: true
 base-url: /dfpadsenseoptimiser
