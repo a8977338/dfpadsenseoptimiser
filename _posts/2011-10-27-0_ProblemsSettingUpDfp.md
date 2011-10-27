@@ -13,5 +13,7 @@ So I did which now leads me to the following error message:
 > Unauthorized access
 > We apologize for the inconvenience, but you are not authorized to visit this page. If you believe this is an error, please contact your account manager.
 
-My guess is that for some reason Google Apps accounts do not work with DFP but apart from a fast but not helping support email I got no idea what happened. Accoring to the email there is no DFP account created..
+My guess was that for some reason Google Apps accounts do not work with DFP but apart from a fast but not helping support email I got no idea what happened. Accoring to the email there is no DFP account created.
+
+By now I tried with a "genuine" Google Account and it's not working either. So I contacted Googles support and am now waiting for a response.
 
