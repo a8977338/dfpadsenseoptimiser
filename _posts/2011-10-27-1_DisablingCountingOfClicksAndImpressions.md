@@ -10,7 +10,7 @@ To respect that I was looking for a way to "sandbox" my adverts. After all I wan
 
 So this was originally one of my adverts.
 
-{% highlight javascript %}
+{% highlight html %}
 <script type="text/javascript"><!--
 google_ad_client = "ca-pub-4766859902889277";
 /* first_ad */
