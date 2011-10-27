@@ -2,7 +2,7 @@
 layout: default
 title: "Problems setting up DFP"
 ---
-# Problems setting up DFP
+## Problems setting up DFP
 
 Just after my AdSense account got working I signed up for [DFP Small Business](https://www.google.com/intl/en_US/dfp/info/sb/index.html). I used the same details as in my Adsense account and the form completed successfully.
 
