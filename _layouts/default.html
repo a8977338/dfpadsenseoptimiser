@@ -116,7 +116,7 @@
           <div class="span4">
             <h3>Chronological Experiences</h3>
             <ul>
-            {% for post in site.posts %}
+            {% for post in site.posts reversed %}
               <li><a href="/dfpadsenseoptimiser{{ post.url }}">{{ post.title }}</a></li>
             {% endfor %}
             </ul>
