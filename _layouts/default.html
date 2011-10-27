@@ -42,12 +42,12 @@
           {{ content }}
           </div>
           <div class="span4">
-            <h3>Chronological Experiences</h3>
-            <ul>
+            <h3>History</h3>
+            <ol>
             {% for post in site.posts reversed %}
               <li><a href="/dfpadsenseoptimiser{{ post.url }}">{{ post.title }}</a></li>
             {% endfor %}
-            </ul>
+            </ol>
             <div>{% include google-adsense-sidebar_block.html %}</div>
           </div>
         </div>
