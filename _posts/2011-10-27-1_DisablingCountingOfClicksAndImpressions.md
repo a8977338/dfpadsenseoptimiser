@@ -32,7 +32,7 @@ google_adtest = 'on';
 
 The resulting advert code looks like this.
 
-{% highlight javascript %}
+{% highlight html %}
 <script type="text/javascript"><!--
 google_ad_client = "ca-pub-4766859902889277";
 /* first_ad */
