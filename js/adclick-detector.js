@@ -1,5 +1,7 @@
 window.onload = function() {
 
+alert('onload running');
+
   function as_click () {
     alert('/asclick');
   }
@@ -85,4 +87,6 @@ window.onload = function() {
       }
     }
   }
+
+alert('onload ended');
 };
