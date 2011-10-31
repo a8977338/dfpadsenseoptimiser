@@ -11,19 +11,19 @@
             }
         }
     }
-    console.info('border color: #'+getParameter('cbd'));
-    console.info('background color: #'+getParameter('cbg'));
-    console.info('link color: #'+getParameter('clk'));
-    console.info('text color: #'+getParameter('ctx'));
-    console.info('url color: #'+getParameter('cul'));
+    document.writeln('<style>');
+    document.writeln('div { background: #'+getParameter('cbg')+'; border: 1px solid #'+getParameter('cbd')+'; color: #'+getParameter('ctx')+' }');
+    document.writeln('a { color: #'+getParameter('clk')+' }');
+    document.writeln('a.url { color: #'+getParameter('cul')+' }');
+    document.writeln('</style>');
     </script>
   </head>
   <body>
-    <div style="background-color:#dddddd;border:1px solid #000000;height:88px;width:726px">
+    <div style="height:88px;width:726px">
       <ul>
-        <li><a href="javascript:alert('ad 1 got clicked!')">This is a dummy advert. Go click it!</a></li>
-        <li><a href="javascript:alert('ad 2 got clicked!')">Try the best dummy link available to day. Get your copy now!</a></li>
-        <li><a href="javascript:alert('ad 3 got clicked!')">Join the dummies! Experience the top range dummy links.</a></li>
+        <li><a href="javascript:alert('ad 1 got clicked!')">This is a dummy advert. Go click it!</a> It's just amazing! <a class="url" href="javascript:alert('ad 1 url got clicked!')">www.clickdummy.com</a></li>
+        <li><a href="javascript:alert('ad 2 got clicked!')">This is a dummy advert. Go click it!</a> It's just amazing! <a class="url" href="javascript:alert('ad 2 url got clicked!')">www.clickdummy.com</a></li>
+        <li><a href="javascript:alert('ad 3 got clicked!')">This is a dummy advert. Go click it!</a> It's just amazing! <a class="url" href="javascript:alert('ad 3 url got clicked!')">www.clickdummy.com</a></li>
       </ul>
     </div>
   </body>
