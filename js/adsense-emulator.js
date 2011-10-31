@@ -3,7 +3,7 @@ document.write('<ins id="aswift_0_anchor" style="display:block;border:none;heigh
 document.write('<iframe id="aswift_0" width="728" scrolling="no" height="90" frameborder="0" style="left:0;position:absolute;top:0;" name="aswift_0" vspace="0" marginheight="0" marginwidth="0" hspace="0" allowtransparency="true" onload="if(!this.loaded) {' +
 'var d=this.contentWindow.document;' +
 'd.write(\'<html><head></head><body>\');' +
-'d.write(\'<p id=\"test\">test</p>\');' +
+'d.write(\'<p id=\\"test\\">test</p>\');' +
 'd.write(\'</body></html>\');' +
 'this.loaded=true;' +
 '}"><iframe>');
