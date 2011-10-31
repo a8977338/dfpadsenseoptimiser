@@ -3,10 +3,9 @@ document.write('<ins id="aswift_0_anchor" style="display:block;border:none;heigh
 document.write('<iframe id="aswift_0" width="728" scrolling="no" height="90" frameborder="0" style="left:0;position:absolute;top:0;" name="aswift_0" vspace="0" marginheight="0" marginwidth="0" hspace="0" allowtransparency="true" onload="if(!this.loaded) {' +
 'var d=this.contentWindow.document;' +
 'd.write(\'<html><head></head><body>\');' +
-'d.write(\'<p id=&quot;test&quot;>test</p>\');' +
+'d.write(\'<iframe id=&quot;emulator_frame1&quot; width=&quot;728&quot; scrolling=&quot;no&quot; height=&quot;90&quot; frameborder=&quot;0&quot; vspace=&quot;0&quot; style=&quot;left:0;position:absolute;top:0&quot; src=&quot;resources/emulated-superbanner.html&quot; name=&quot;emulator_frame1&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; hspace=&quot;0&quot; allowtransparency=&quot;true&quot;></iframe>\');' +
 'd.write(\'</body></html>\');' +
 'this.loaded=true;' +
 '}"><iframe>');
 document.write('</ins>');
 document.write('</ins>');
-//'d.write(\'<iframe id=\"emulator_frame1\" width=\"728\" scrolling=\"no\" height=\"90\" frameborder=\"0\" vspace=\"0\" style=\"left:0;position:absolute;top:0\" src=\"resources/emulated-superbanner.html\" name=\"emulator_frame1\" marginwidth=\"0\" marginheight=\"0\" hspace=\"0\" allowtransparency=\"true\"></iframe>\');' +
