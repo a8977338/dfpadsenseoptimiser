@@ -8,6 +8,8 @@ Google AdSense terms are quite strict so it is not wise to produce too many ad i
 
 So instead of running AdSense on all the steps of this tutorial we will emulate the basics of AdSense in order to not risk clicking real AdSense links by accident.
 
+This is especially useful as we will have to trigger events on ad clicks to notify Google Website Optimizer upon success. While developing such code you will have to click which is forbidden on real adverts.
+
 {% highlight html %}
 <script type="text/javascript"><!--
 emulator_color_border = '000000';
@@ -71,7 +73,7 @@ The final advert dummy looks like this.
 </html>
 {% endhighlight %}
 
-Here is an example.
+Here is the final result.
 
 <script type="text/javascript">
 emulator_color_border = '0000FF';
