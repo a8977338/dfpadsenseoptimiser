@@ -1,9 +1,7 @@
-alert('onload running');
-
   function as_click () {
     alert('/asclick');
   }
- /*{{{*/
+
   if(typeof window.addEventListener != 'undefined')
   {
     window.addEventListener('load', adsense_init, false);
@@ -34,10 +32,12 @@ alert('onload running');
   }
 
   function adsense_init () {
+    console.info('adsense_init');
     if (document.all) {  //ie
       var el = document.getElementsByTagName("iframe");
       for(var i = 0; i < el.length; i++) {
-        if(el[i].src.indexOf('googlesyndication.com') > -1) {
+        //if(el[i].src.indexOf('googlesyndication.com') > -1) {
+        if(el[i].src.indexOf('resources/emulated-superbanner') > -1) {
           el[i].onfocus =  as_click;
         }
       }
@@ -46,7 +46,7 @@ alert('onload running');
       window.addEventListener('mousemove', getMouse, true);
     }
   }
- /*}}}*/
+ 
   var px;
   var py;
  
@@ -85,5 +85,3 @@ alert('onload running');
       }
     }
   }
-
-alert('onload ended');
