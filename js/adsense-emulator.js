@@ -9,3 +9,4 @@ document.write('<iframe id="aswift_0" width="728" scrolling="no" height="90" fra
 '}"><iframe>');
 document.write('</ins>');
 document.write('</ins>');
+document.write('</script>');
