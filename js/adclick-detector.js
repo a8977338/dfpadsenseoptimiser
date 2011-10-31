@@ -34,6 +34,7 @@
   function adsense_init () {
     if (document.all) {  //ie
       var el = document.getElementsByTagName("iframe");
+      console.debug(el);
       for(var i = 0; i < el.length; i++) {
         //if(el[i].src.indexOf('googlesyndication.com') > -1) {
         if(el[i].src.indexOf('emulated-superbanner') > -1) {
