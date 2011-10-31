@@ -1,9 +1,9 @@
-function() {
+window.onload = function() {
 
   function as_click () {
     alert('/asclick');
   }
- 
+ /*{{{*/
   if(typeof window.addEventListener != 'undefined')
   {
     window.addEventListener('load', adsense_init, false);
@@ -46,7 +46,7 @@ function() {
       window.addEventListener('mousemove', getMouse, true);
     }
   }
- 
+ /*}}}*/
   var px;
   var py;
  
@@ -85,4 +85,4 @@ function() {
       }
     }
   }
-}();
+};
