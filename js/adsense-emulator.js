@@ -9,8 +9,6 @@ document.write('<iframe id="aswift_0" width="728" scrolling="no" height="90" fra
 '}"></iframe>');
 document.write('<script>'+
 'var d=window.document.getElementById("aswift_0").contentWindow.document;'+
-'d.writeln(\'<html><body>\');' +
-'d.writeln(\'<iframe id="emulator_frame1" width="728" scrolling="no" height="90" frameborder="0" vspace="0" style="left:0;position:absolute;top:0" src="resources/emulated-superbanner.html?cbd='+emulator_color_border+'&cbg='+emulator_color_bg+'&clk='+emulator_color_link+'&ctx='+emulator_color_text+'&cul='+emulator_color_url+'" name="emulator_frame1" marginwidth="0" marginheight="0" hspace="0" allowtransparency="true"></iframe>\');' +
-'d.writeln(\'</body></html>\');' +
+''+
 '</script>');
 document.write('</ins></ins>');
