@@ -1,5 +1,3 @@
-window.onload = function() {
-
 alert('onload running');
 
   function as_click () {
@@ -89,4 +87,3 @@ alert('onload running');
   }
 
 alert('onload ended');
-};
