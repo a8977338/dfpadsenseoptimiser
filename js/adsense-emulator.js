@@ -8,4 +8,3 @@ document.write('<iframe id="aswift_0" width="728" scrolling="no" height="90" fra
 'this.loaded=true;return false;' +
 '}"></iframe>');
 document.write('</ins></ins>');
-return false;
