@@ -32,12 +32,12 @@
   }
 
   function adsense_init () {
-    console.info('adsense_init');
     if (document.all) {  //ie
       var el = document.getElementsByTagName("iframe");
       for(var i = 0; i < el.length; i++) {
         //if(el[i].src.indexOf('googlesyndication.com') > -1) {
-        if(el[i].src.indexOf('resources/emulated-superbanner') > -1) {
+        if(el[i].src.indexOf('emulated-superbanner') > -1) {
+          console.info('dummy detected');
           el[i].onfocus =  as_click;
         }
       }
