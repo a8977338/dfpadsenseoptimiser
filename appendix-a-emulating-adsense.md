@@ -31,7 +31,6 @@ emulator_color_url    = '008000';
 emulator_color_text   = '000000';
 //-->
 </script>
-<script type="text/javascript" src="js/adsense-emulator.js">
-</script>
+<script type="text/javascript" src="js/adsense-emulator.js"></script>
 
 So instead of displaying ads we display a dummy link that was loaded via javascript and styled according to some javascript varables.
