@@ -1,5 +1,5 @@
 ---
-layout: book
+layout: default
 title: Appendix A: Emulating AdSense
 ---
 ## Appendix A: Emulating AdSense
