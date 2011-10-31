@@ -6,5 +6,5 @@ document.write('<iframe id="aswift_0" width="728" scrolling="no" height="90" fra
 'd.writeln(\'<iframe id=&quot;emulator_frame1&quot; width=&quot;728&quot; scrolling=&quot;no&quot; height=&quot;90&quot; frameborder=&quot;0&quot; vspace=&quot;0&quot; style=&quot;left:0;position:absolute;top:0&quot; src=&quot;resources/emulated-superbanner.html&quot; name=&quot;emulator_frame1&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; hspace=&quot;0&quot; allowtransparency=&quot;true&quot;></iframe>\');' +
 'd.writeln(\'</body></html>\');' +
 'this.loaded=true;' +
-'}"><iframe>');
+'}"></iframe>');
 document.write('</ins></ins>');
