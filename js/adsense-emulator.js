@@ -9,6 +9,11 @@ document.write('<iframe id="aswift_0" width="728" scrolling="no" height="90" fra
 '}"></iframe>');
 document.write('<script>'+
 'var d=window.document.getElementById("aswift_0").contentWindow.document;'+
-''+
+'var b.getElementsByTagName("body")[0];'+
+'var iframe=d.createElement("iframe"):'+
+'var attr = d.createAttribute("src")'+
+'attr.nodeValue="resources/emulated-superbanner.html";'+
+'iframe.setAttributeNode(attr);'+
+'b.appendChild(iframe);'+
 '</script>');
 document.write('</ins></ins>');
