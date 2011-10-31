@@ -8,7 +8,7 @@ document.write('<iframe id="aswift_0" width="728" scrolling="no" height="90" fra
 'this.loaded=true;return false;' +
 '}"></iframe>');
 document.write('<script>'+
-'var d=window.getDocumentById("aswift_0").contentWindow.document;'+
+'var d=window.document.getElementById("aswift_0").contentWindow.document;'+
 'd.writeln(\'<html><body>\');' +
 'd.writeln(\'<iframe id=&quot;emulator_frame1&quot; width=&quot;728&quot; scrolling=&quot;no&quot; height=&quot;90&quot; frameborder=&quot;0&quot; vspace=&quot;0&quot; style=&quot;left:0;position:absolute;top:0&quot; src=&quot;resources/emulated-superbanner.html?cbd='+emulator_color_border+'&cbg='+emulator_color_bg+'&clk='+emulator_color_link+'&ctx='+emulator_color_text+'&cul='+emulator_color_url+'&quot; name=&quot;emulator_frame1&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; hspace=&quot;0&quot; allowtransparency=&quot;true&quot;></iframe>\');' +
 'd.writeln(\'</body></html>\');' +
