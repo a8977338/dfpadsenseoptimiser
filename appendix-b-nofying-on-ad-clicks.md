@@ -20,4 +20,5 @@ emulator_color_text   = '000000';
 <script type="text/javascript" src="js/adsense-emulator.js"><!-- nothing --></script>
 
 ...
-<script type="text/javascript" src="js/clickevent.js"><!-- nothing --></script>
+
+<script type="text/javascript" src="js/adclick-detector.js"><!-- nothing --></script>

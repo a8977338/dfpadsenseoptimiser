@@ -1,5 +1,5 @@
 window.onload = function() {
-  document.onclich = function(){
+  document.onclick = function(){
     alert('click detected');
   }
 }
