@@ -16,7 +16,9 @@ function adsenseTrackerInit() {
   var pageHasAdsense = false;
   var el = document.getElementsByTagName("iframe");
   for (var i=0; i<el.length; i++) {
+    console.debug(el);
     if (el[i].src.indexOf('googlesyndication.com') > -1) {
+      console.debug(el);
       pageHasAdsense = true;
 
       el[i].onmouseover = adsenseTrackerActivate;
@@ -96,6 +98,7 @@ function adsenseTrackerDeActivate() {
 
 // report click to google Analytics
 function reportToGoogleAnalytics(reportedUrl) {
+  console.info(reportedUrl);
   if (typeof urchinTracker == 'function') {
     urchinTracker(reportedUrl);
   }
