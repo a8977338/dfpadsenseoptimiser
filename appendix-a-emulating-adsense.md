@@ -76,10 +76,10 @@ The final advert dummy looks like this.
 Here is the final result.
 
 <script type="text/javascript">
-emulator_color_border = '0000FF';
-emulator_color_bg     = 'DDDDFF';
-emulator_color_link   = '0000FF';
-emulator_color_url    = '00FF00';
+emulator_color_border = '000000';
+emulator_color_bg     = 'DDDDDD';
+emulator_color_link   = '000080';
+emulator_color_url    = '008000';
 emulator_color_text   = '000000';
 </script>
 <script type="text/javascript" src="js/adsense-emulator.js"><!-- nothing --></script>
