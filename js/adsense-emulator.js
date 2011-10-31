@@ -38,18 +38,9 @@ document.write('<iframe id="aswift_0" width="728" scrolling="no" height="90" fra
 'attr.nodeValue=&quot;90&quot;;'+
 'iframe.setAttributeNode(attr);'+
 'var attr=d.createAttribute(&quot;src&quot;);'+
-'attr.nodeValue=&quot;resources/emulated-superbanner.html&quot;;'+
+'attr.nodeValue=&quot;resources/emulated-superbanner.html?cbd='+emulator_color_border+'&cbg='+emulator_color_bg+'&clk='+emulator_color_link+'&ctx='+emulator_color_text+'&cul='+emulator_color_url+'&quot;;'+
 'iframe.setAttributeNode(attr);'+
 'b.appendChild(iframe);'+
 'this.loaded=true;return false;' +
 '}"></iframe>');
-document.write('<script>'+
-'var d=window.document.getElementById("aswift_0").contentWindow.document;'+
-'var b=d.getElementsByTagName("body")[0];'+
-'var iframe=d.createElement("iframe");'+
-'var attr=d.createAttribute("src");'+
-'attr.nodeValue="resources/emulated-superbanner.html";'+
-'iframe.setAttributeNode(attr);'+
-'b.appendChild(iframe);'+
-'</script>');
 document.write('</ins></ins>');
