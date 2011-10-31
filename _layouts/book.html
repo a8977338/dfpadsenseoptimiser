@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/dfpadsenseoptimiser/css/bootstrap.css" rel="stylesheet">
+    <link href="/dfpadsenseoptimiser/css/custom.css" rel="stylesheet">
+    {% include google-analytics-code.html %} 
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="/dfpadsenseoptimiser/">An Online Marketing Experiment</a>
+          <ul class="nav">
+            <li class="active"><a href="/dfpadsenseoptimiser/">Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        <div class="page-header">
+          <h1>Optimizing AdSense <small>using Google Website Optimizer and DFP Small Business</small></h1>
+        </div>
+        <div class="row">
+          <div class="span10">
+          {{ content }}
+          </div>
+          <div class="span4">
+            <h3>History</h3>
+            <ol>
+            {% for post in site.posts reversed %}
+              <li><a href="/dfpadsenseoptimiser{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>&copy; Christian Schaefer 2011</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  </body>
+</html>
