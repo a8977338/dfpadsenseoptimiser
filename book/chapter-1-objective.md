@@ -1,7 +1,7 @@
 ---
 layout: "book"
 title: "Chapter 1 - Objective"
-sub1: "sub menu"
+sub1: "chapter-1.html"
 ---
 ## Chapter 1 - Objective
 
