@@ -1,6 +1,9 @@
 ---
 layout: "book"
 title: "Chapter 1 - Objective"
+sub1: "sub menu"
+sub2: "one","two","three"
+sub3: ["one","two","three"]
 ---
 ## Chapter 1 - Objective
 
