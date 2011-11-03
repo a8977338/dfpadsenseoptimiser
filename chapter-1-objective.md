@@ -4,7 +4,7 @@ title: "Chapter 1 - Objective"
 ---
 ## Chapter 1 - Objective
 
-What is this website all about?
+Many websites are making profits with advertising. This tutorial is about increasing this profit.
 
 ![Google AdSense](/dfpadsenseoptimiser/img/google-adsense-logo.gif "Google AdSense logo")
 
