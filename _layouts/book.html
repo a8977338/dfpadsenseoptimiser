@@ -51,6 +51,9 @@
               <li><a href="/dfpadsenseoptimiser/book/chapter-6-using-dfp-doubleclick-for-publishers-small-business">Chapter 6 - Using DoubleClick For Publishers (Small Business)</a></li>
             </ol>
           {{ page.sub1 }}
+          {% for item in page.sub1 %}
+            {{ item }}<br />
+          {% endfor %}
             {% include chapter-1.html %} 
           </div>
         </div>
