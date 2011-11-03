@@ -4,8 +4,7 @@ title: "Chapter 1 - Objective"
 ---
 ## Chapter 1 - Objective
 
-@todo write
-
+todo: write
 
 <script type="text/javascript"><!--
 google_ad_client = "ca-pub-5588356258460519";
@@ -19,3 +18,5 @@ googel_test = "on";
 <script type="text/javascript"
 src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
+
+todo: write more..
