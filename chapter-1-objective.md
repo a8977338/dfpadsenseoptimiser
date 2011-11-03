@@ -4,7 +4,7 @@ title: "Chapter 1 - Objective"
 ---
 ## Chapter 1 - Objective
 
-![Google AdSense](/dfpadsenseoptimiser/img/google-adsense.gif "Google AdSense logo")
+![Google AdSense](/dfpadsenseoptimiser/img/google-adsense-logo.gif "Google AdSense logo")
 
 If you are using [Google AdSense](http://www.google.com/adsense "Google AdSense homepage") on your website chances are that you're not making the most of it.
 You probably chose the design of your based on how it fitted to your website design or maybe on what
@@ -29,7 +29,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
 What you need is an automated process that serves your ad designs and tracks them without manual work!
 
-![Google Website Optimizer](/dfpadsenseoptimiser/img/google-website-optimizer.gif "Google Website Optimizer logo")
+![Google Website Optimizer](/dfpadsenseoptimiser/img/google-website-optimizer-logo.gif "Google Website Optimizer logo")
 
 Fortunately Google already provides a tool to do these so called multivariate tests: [Google Website
 Optimizer](http://www.google.com/websiteoptimizer "Google Website Optimizer homepage").
@@ -38,7 +38,7 @@ But GWO is meant to test different layouts for buttons and landing pages and is 
 for AdSense. In this Tutorial I want to demonstrate a way you can combine the two and eventually get
 more money out of your ads but still comply with Googles terms and conditions.
 
-![DoubleClick For Publishers](/dfpadsenseoptimiser/img/doubleclick-for-publishers.png "DoubleClick For Publishers logo")
+![DoubleClick For Publishers](/dfpadsenseoptimiser/img/doubleclick-for-publishers-logo.png "DoubleClick For Publishers logo")
 
 In the last chapters I then want to demonstrate how you can apply the same principles when using
 [DoubleClick For Publishers](http://www.google.com/admanager "DoubleClick For Publishers homepage") as
