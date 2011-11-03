@@ -4,6 +4,8 @@ title: "Chapter 1 - Objective"
 ---
 ## Chapter 1 - Objective
 
+What is this website all about?
+
 ![Google AdSense](/dfpadsenseoptimiser/img/google-adsense-logo.gif "Google AdSense logo")
 
 If you are using [Google AdSense](http://www.google.com/adsense "Google AdSense homepage") on your website chances are that you're not making the most of it.
