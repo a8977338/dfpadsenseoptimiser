@@ -1,6 +1,8 @@
 ---
 layout: "book"
 title: "Chapter 1 - Objective"
+category: book
+permalink: "/book/chapter-1-objective"
 submenu:
   adsense:
     hook:  "adsense"

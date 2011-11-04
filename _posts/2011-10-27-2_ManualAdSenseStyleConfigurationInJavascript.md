@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Manual AdSense style configuration in javascript"
+category: blog
 ---
 ## Manual AdSense style configuration in javascript
 

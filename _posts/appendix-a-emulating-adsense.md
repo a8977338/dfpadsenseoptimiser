@@ -1,6 +1,8 @@
 ---
 layout: "book"
 title: "Appendix A: Emulating AdSense"
+category: book
+permalink: "/book/appendix-a-emulating-adsense"
 ---
 ## Appendix A: Emulating AdSense
 

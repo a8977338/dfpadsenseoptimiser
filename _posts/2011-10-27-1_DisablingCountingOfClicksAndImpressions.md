@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Disabling counting of clicks and impressions"
+category: blog
 ---
 ## Disabling counting of clicks and impressions
 
