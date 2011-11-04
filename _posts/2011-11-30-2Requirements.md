@@ -6,6 +6,7 @@ permalink: "/book/chapter-2-requirements.html"
 abstract: "Read this chapter to find out about the requirements necessary to make this book work out for you."
 submenu:
   - { hook: "adsense",     title: "Google AdSense" }
+  - { hook: "analytics",   title: "Google Analytics" }
   - { hook: "optimizer",   title: "Google Website Optimizer" }
   - { hook: "doubleclick", title: "DoubleClick For Publishers" }
 ---
