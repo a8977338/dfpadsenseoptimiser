@@ -1,6 +1,7 @@
 ---
 layout: "book"
 title: "Optimizing Google AdSense"
+permalink: "/book"
 ---
 ## Optimizing Google AdSense
 
