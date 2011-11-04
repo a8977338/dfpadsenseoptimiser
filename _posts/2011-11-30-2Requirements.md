@@ -24,6 +24,14 @@ possibilities when optimizing. However a premium account is not necessary.
 
 [Sign up for Google AdSense here](http://www.google.com/adsense "Google AdSense homepage")
 
+<a name="analytics">&nbsp;</a>
+![Google Analytics](/dfpadsenseoptimiser/img/google-analytics-logo.gif "Google Analytics logo")
+
+In order to track the results of your efforts you will need a Google Analytics account. If you already own such an account you can easily set up a new
+profile for the page you want to apply this tutorial to.
+
+[Sign up for Google Analytics here](http://www.google.com/analytics/ "Google Analytics homepage")
+
 <a name="optimizer">&nbsp;</a>
 ![Google Website Optimizer](/dfpadsenseoptimiser/img/google-website-optimizer-logo.gif "Google Website Optimizer logo")
 
