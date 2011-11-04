@@ -6,14 +6,14 @@ permalink: "/book/"
 ## Optimizing Google AdSense
 
 {% for post in site.posts reversed %}
-  {% if post.category == 'book' %}
 ### {{ post.title }}
+
+{{ post.category }}
 
 {{ post.abstract }}
 
 [read more](/dfpadsenseoptimiser{{ post.url }} "{{ post.title }}")
 
-  {% endif %}
 {% endfor %}
 
 ..
