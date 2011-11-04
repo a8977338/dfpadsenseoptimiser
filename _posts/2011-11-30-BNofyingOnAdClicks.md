@@ -2,7 +2,7 @@
 layout: "book"
 title: "Appendix B: Notifying on ad clicks"
 category: book
-_permalink: "/book/appendix-b-notifying-on-ad-clicks"
+permalink: "/book/appendix-b-notifying-on-ad-clicks.html"
 ---
 ## Appendix B: Notifying on ad  clicks
 
