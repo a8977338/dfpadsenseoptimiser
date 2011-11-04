@@ -43,13 +43,6 @@
           {{ content }}
           </div>
           <div class="span4">
-            <h3>Chapter Contents</h3>
-            <ul>
-          {% for item in page.submenu %}
-              <li><a href="#{{ item.hook }}">{{ item.title }}</a></li>
-          {% endfor %}
-            </ul>
-            <br />
             <h3>Table of Contents</h3>
             <ul>
             {% for post in site.posts reversed %}
@@ -61,6 +54,26 @@
                 {% endif%}
               {% endif %}
             {% endfor %}
+            </ul>
+            <br />
+            <div>
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-5588356258460519";
+/* small */
+google_ad_slot = "6094597372";
+google_ad_width = 125;
+google_ad_height = 125;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+            </div>
+            <h3>Chapter Contents</h3>
+            <ul>
+          {% for item in page.submenu %}
+              <li><a href="#{{ item.hook }}">{{ item.title }}</a></li>
+          {% endfor %}
             </ul>
           </div>
         </div>
