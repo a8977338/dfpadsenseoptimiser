@@ -53,7 +53,11 @@
             <ul>
             {% for post in site.posts reversed %}
               {% if post.category == 'book' %}
-              <li{% if page.url == post.url %} class="active"{% endif%}><a href="/dfpadsenseoptimiser{{ post.url }}">{{ post.title }}</a></li>
+                {% if page.url == post.url %}
+              <li class="active">{{ post.title }}</li>
+                {% else%}
+              <li><a href="/dfpadsenseoptimiser{{ post.url }}">{{ post.title }}</a></li>
+                {% endif%}
               {% endif %}
             {% endfor %}
             </ul>
