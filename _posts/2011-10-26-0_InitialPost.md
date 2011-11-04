@@ -2,6 +2,7 @@
 layout: default
 title: "Lets start this!"
 category: blog
+permalink: /blog/:title
 ---
 ## Lets start this!
 
