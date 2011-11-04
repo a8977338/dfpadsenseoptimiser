@@ -1,6 +1,6 @@
 ---
 layout: "book"
-title: "Chapter 3 - Styling Google AdSense"
+title: "Chapter 3 - Using Google AdSense"
 category: book
 permalink: "/book/chapter-3-using-google-adsense.html"
 ---
