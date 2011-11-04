@@ -42,18 +42,20 @@
           {{ content }}
           </div>
           <div class="span4">
-            <h3>Table of Contents</h3>
-            <ol>
-            {% for post in site.posts reversed %}
-              {% if post.category == 'book' %}
-              <li><a href="/dfpadsenseoptimiser{{ post.url }}">{{ post.title }}</a></li>
-              {% endif %}
-            {% endfor %}
-            </ol>
+            <h3>Chapter Contents</h3>
             <ul>
           {% for item in page.submenu %}
               <li><a href="#{{ item.hook }}">{{ item.title }}</a></li>
           {% endfor %}
+            </ul>
+            <br />
+            <h3>Table of Contents</h3>
+            <ul>
+            {% for post in site.posts reversed %}
+              {% if post.category == 'book' %}
+              <li{% if page.url == post.url %} class="active"{% endif%}><a href="/dfpadsenseoptimiser{{ post.url }}">{{ post.title }}</a></li>
+              {% endif %}
+            {% endfor %}
             </ul>
           </div>
         </div>
