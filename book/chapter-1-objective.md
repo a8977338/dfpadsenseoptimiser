@@ -1,14 +1,22 @@
 ---
 layout: "book"
 title: "Chapter 1 - Objective"
-sub1:
-  sub1_1: "one"
-  sub1_2: "two"
+submenu:
+  adsense:
+    hook:  "adsense"
+    title: "Google AdSense"
+  optimizer:
+    hook:  "optimizer"
+    title: "Google Website Optimizer"
+  doubleclick:
+    hook:  "doubleclick"
+    title: "DoubleClick For Publishers"
 ---
 ## Chapter 1 - Objective
 
 Many websites are making profits with advertising. This tutorial is about increasing this profit.
 
+<a name="adsense">&nbsp;</a>
 If you are using [Google AdSense](http://www.google.com/adsense "Google AdSense homepage") on your website chances are that you're not making the most of it.
 You probably chose the design of your based on how it fitted to your website design or maybe on what
 you thought would make your users click more. But are you sure you picked the optimal design with
@@ -32,6 +40,7 @@ googel_test = "on";
 src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
 
+<a name="optimizer">&nbsp;</a>
 What you need is an automated process that serves your ad designs and tracks them without manual work!
 
 Fortunately Google already provides a tool to do these so called multivariate tests: [Google Website
@@ -43,6 +52,7 @@ But GWO is meant to test different layouts for buttons and landing pages and is 
 for AdSense. In this Tutorial I want to demonstrate a way you can combine the two and eventually get
 more money out of your ads but still comply with Googles terms and conditions.
 
+<a name="doubleclick">&nbsp;</a>
 In the last chapters I then want to demonstrate how you can apply the same principles when using
 [DoubleClick For Publishers](http://www.google.com/admanager "DoubleClick For Publishers homepage") as
 your adserver without great changes to the code of your website.
