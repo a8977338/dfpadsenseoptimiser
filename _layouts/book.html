@@ -52,7 +52,7 @@
             </ol>
             <ul>
           {% for item in page.submenu %}
-              <li>{{ item }}: {{ item.hook }}, {{ item.title }}</li>
+              <li><a href="#{{ item.hook }}">{{ item.title }}</a></li>
           {% endfor %}
             </ul>
           </div>
