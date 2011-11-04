@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Lets start this!"
+category: blog
 ---
 ## Lets start this!
 

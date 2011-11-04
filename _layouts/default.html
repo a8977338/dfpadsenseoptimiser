@@ -46,7 +46,9 @@
             <h3>History</h3>
             <ol>
             {% for post in site.posts reversed %}
+              {% if post.category == 'blog' %}
               <li><a href="/dfpadsenseoptimiser{{ post.url }}">{{ post.title }}</a></li>
+              {% endif %}
             {% endfor %}
             </ol>
           </div>
