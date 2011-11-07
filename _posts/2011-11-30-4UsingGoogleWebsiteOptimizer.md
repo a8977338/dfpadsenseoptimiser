@@ -27,6 +27,8 @@ Lets assume you have a download button on your website and you want to use the b
 </style>
 <a href="/dfpadsenseoptimiser/gwo-conversion-page.html" class="gwo_test_object">Test Object</a>
 
+<br />
+
 You want to define multiple layouts of this button and serve them to your users to see which layout gets the most clicks. GWO is developed just for this purpose.
 
 ### Integration<a name="integration">&nbsp;</a>
