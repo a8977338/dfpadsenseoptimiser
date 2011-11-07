@@ -19,13 +19,13 @@ Lets assume you have a download button on your website and you want to use the b
 <style>
 .gwo_test_object { padding: 5px; background: #888888; border: 1px solid #000000;}
 </style>
-<button class="gwo_test_object">Test Object</button>
+<a href="/dfpadsenseoptimiser/gwo-conversion-page.html" class="gwo_test_object">Test Object</a>
 {% endhighlight %}
 
 <style>
 .gwo_test_object { padding: 5px; background: #888888; border: 1px solid #000000;}
 </style>
-<button class="gwo_test_object">Test Object</button>
+<a href="/dfpadsenseoptimiser/gwo-conversion-page.html" class="gwo_test_object">Test Object</a>
 
 You want to define multiple layouts of this button and serve them to your users to see which layout gets the most clicks. GWO is developed just for this purpose.
 
@@ -100,7 +100,7 @@ Following the above example the resulting code would look similar to this.
 .gwo_test_object { padding: 5px; background: #888888; border: 1px solid #000000;}
 </style>
 </noscript>
-<a href="/dfpadsenseoptimiser/gwo-conversion-page.html" class="gwo_test_object">Test Object</button>
+<a href="/dfpadsenseoptimiser/gwo-conversion-page.html" class="gwo_test_object">Test Object</a>
 {% endhighlight %}
 
 The section name (_gwo_test_object_) is used to identify your test in the GWO web interface. In this case we framed the _style_ bit of our markup in order to replace it with a variation.
