@@ -143,7 +143,41 @@ Google Website Optimizer will use that new Google Analytics profile to track eac
 
 ### Demo<a name="demo">&nbsp;</a>
 
-See it here inside an iframe.
+At the bottom of this page you can see a simple example consisting of two pages. The first - the _test page_ - shows a button linking to the second - the _conversion page_. The _test page_ has the above control and testing scripts on it while the _conversion page_ has the conversion script.
+
+Additionally the _test page_ holds the test section itself.
+
+{% highlight html %}
+<script>utmx_section("gwo_test_object")</script>
+<style>
+.gwo_test_object { padding: 5px; background: #888888; border: 1px solid #000000;}
+</style>
+</noscript>
+<a href="/dfpadsenseoptimiser/gwo-conversion-page.html" class="gwo_test_object">Test Object</a>
+{% endhighlight %}
+
+This test has three variations configured like the following.
+
+{% highlight html %}
+<!-- 1. variation "green" -->
+<style>
+.gwo_test_object { padding: 5px; background: #66FF66; border: 1px solid #008800;}
+</style>
+
+<!-- 2. variation "blue" -->
+<style>
+.gwo_test_object { padding: 5px; background: #6666FF; border: 1px solid #000088;}
+</style>
+
+<!-- 3. variation "red" -->
+<style>
+.gwo_test_object { padding: 5px; background: #FF6666; border: 1px solid #880000;}
+</style>
+{% endhighlight %}
+
+Whenever a user visits this example he will get a variation or the original. These variations are "sticky" in that a user is served only one combination for a certain time in order to not confuse him.
+
+Below this sentence the example is shown inside an iframe.
 
 <iframe src="/dfpadsenseoptimiser/gwo-test-page.html" width="580" height="60" frameborder="0"><p>Your browser does not support iframes.</p></iframe>
 
