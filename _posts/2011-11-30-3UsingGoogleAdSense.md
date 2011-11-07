@@ -41,7 +41,7 @@ When you create a new ad unit using the Google AdSense web interface you can mod
 
 Before explaining the existing options please be aware of the following paragraph from the [Google AdSenseTM Online Standard Terms and Conditions](https://www.google.com/adsense/localized-terms?rc=GB "Google AdSenseTM Online Standard Terms and Conditions (localized for GB)").
 
-> *16.2 Save as permitted by law, You will not modify, adapt, translate, prepare derivative works from, decompile, reverse engineer, disassemble or otherwise attempt to derive source code from any Google services, software, or documentation, or create or attempt to create a substitute or similar service or product through use of or access to the Programme or proprietary information related thereto.*
+> *16.2   Save as permitted by law, You will not modify, adapt, translate, prepare derivative works from, decompile, reverse engineer, disassemble or otherwise attempt to derive source code from any Google services, software, or documentation, or create or attempt to create a substitute or similar service or product through use of or access to the Programme or proprietary information related thereto.*
 
 Modification and adaption are both very soft terms arguably might prohibit what is done in this tutorial. However I believe that the steps described in the following paragraphs and chapters __do not__ violate these terms as they a) do not change any Google code, b) realize in javascript what can be done using the Google AdSense web interface anyway.
 
