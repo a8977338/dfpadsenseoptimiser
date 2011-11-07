@@ -8,6 +8,7 @@ submenu:
   - { hook: "tracking",    title: "Google Analytics Tracking" }
   - { hook: "demo",        title: "Demo" }
 ---
+
 ## Chapter 4 - Using Google Website Optimizer
 
 The best way to introduce you to Google Website Optimizer (GWO) is by doing it step by step on an example.
@@ -21,11 +22,7 @@ Lets assume you have a download button on your website and you want to use the b
 <button class="siteopt_test_object">Test Object</button>
 {% endhighlight %}
 
-<style>
-.siteopt_test_object { padding: 5px; background: #66FF66; border: 2px solid #006600;}
-.siteopt_test_object { padding: 5px; background: #888888; border: 1px solid #000000;}
-</style>
-<button class="siteopt_test_object">Test Object</button>
+<iframe src="/dfpadsenseoptimiser/gwo-test-page.html" width="400" height="60"></iframe>
 
 You want to define multiple layouts of this button and serve them to your users to see which layout gets the most clicks. GWO is developed just for this purpose.
 
@@ -41,13 +38,15 @@ There are three components.
 
 #### Control and Tracking Script
 
-...
+On the so called _test page_ you need to install two scripts.
+
+The first one is the control script. It identifies your GWO account id (_var k='0123456789'_) and loads the scripts that provide all that GWO functionality.
 
 {% highlight html %}
 <!-- Google Website Optimizer Control Script -->
 <script>
 function utmx_section(){}function utmx(){}
-(function(){var k='1055643972',d=document,l=d.location,c=d.cookie;function f(n){
+(function(){var k='0123456789',d=document,l=d.location,c=d.cookie;function f(n){
 if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.indexOf(';',i);return escape(c.substring(i+n.
 length+1,j<0?c.length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;
 d.write('<sc'+'ript src="'+
@@ -57,6 +56,11 @@ d.write('<sc'+'ript src="'+
 '" type="text/javascript" charset="utf-8"></sc'+'ript>')})();
 </script>
 <!-- End of Google Website Optimizer Control Script -->
+{% endhighlight %}
+
+This is directly followed by the second script which you will recognize as 
+
+{% highlight html %}
 <!-- Google Website Optimizer Tracking Script -->
 <script type="text/javascript">
   var _gaq = _gaq || [];
