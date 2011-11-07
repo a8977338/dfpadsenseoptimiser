@@ -125,6 +125,9 @@ the code, the segments, ..
 
 ### Demo<a name="demo">&nbsp;</a>
 
+![GWO variations](/dfpadsenseoptimiser/img/gwo-variations.png "Google Website Optimizer variations")
+
+
 See it here inside an iframe.
 
 <iframe src="/dfpadsenseoptimiser/gwo-test-page.html" width="580" height="60" frameborder="0"><p>Your browser does not support iframes.</p></iframe>
