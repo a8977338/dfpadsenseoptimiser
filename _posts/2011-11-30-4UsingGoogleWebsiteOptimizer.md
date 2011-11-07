@@ -61,14 +61,14 @@ d.write('<sc'+'ript src="'+
 <!-- End of Google Website Optimizer Control Script -->
 {% endhighlight %}
 
-This is directly followed by the second script which you will recognize as 
+This is directly followed by the second script which you will recognize as a Google Analytics tracking script.
 
 {% highlight html %}
 <!-- Google Website Optimizer Tracking Script -->
 <script type="text/javascript">
   var _gaq = _gaq || [];
-  _gaq.push(['gwo._setAccount', 'UA-26812449-2']);
-  _gaq.push(['gwo._trackPageview', '/1055643972/test']);
+  _gaq.push(['gwo._setAccount', 'UA-01234567-8']);
+  _gaq.push(['gwo._trackPageview', '/0123456789/test']);
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
@@ -78,34 +78,53 @@ This is directly followed by the second script which you will recognize as
 <!-- End of Google Website Optimizer Tracking Script -->
 {% endhighlight %}
 
-...
+You will notice that GWO uses your existing Google Analytics account and creates a new profile for you which only knows about one page: _/0123456789/test_
+
+This page doesn't exist but is used to track the number of tests being run. This new profile will not show up on your Google Analytics account.
 
 #### Page Section
 
-...
+The next part is also located on the _test page_. It consists of two tags that frame the bit of markup you want to create variations for.
 
 {% highlight html %}
 <script>utmx_section("Insert your section name here")</script>
-{% endhighlight %}
-
-...
-
-{% highlight html %}
+// some markup you want to variate..
 </noscript>
 {% endhighlight %}
 
-...
+Following the above example the resulting code would look similar to this.
+
+{% highlight html %}
+<script>utmx_section("gwo_test_object")</script>
+<style>
+.gwo_test_object { padding: 5px; background: #888888; border: 1px solid #000000;}
+</style>
+</noscript>
+<a href="/dfpadsenseoptimiser/gwo-conversion-page.html" class="gwo_test_object">Test Object</button>
+{% endhighlight %}
+
+The section name (_gwo_test_object_) is used to identify your test in the GWO web interface. In this case we framed the _style_ bit of our markup in order to replace it with a variation.
+
+A variation could look like this.
+
+{% highlight html %}
+<style>
+.gwo_test_object { padding: 5px; background: #66FF66; border: 1px solid #008800;}
+</style>
+{% endhighlight %}
+
+So if the user is served the variation he will see a green button instead of a grey one.
 
 #### Conversion Script
 
-...
+On the page your button links to you have to install the conversion script_. Again this is a simple Google Analytics tracking script that links to the same profile as the one on the _test page_ only this time the URL is: _/0123456789/goal_
 
 {% highlight html %}
 <!-- Google Website Optimizer Tracking Script -->
 <script type="text/javascript">
   var _gaq = _gaq || [];
-  _gaq.push(['gwo._setAccount', 'UA-26812449-2']);
-  _gaq.push(['gwo._trackPageview', '/1055643972/goal']);
+  _gaq.push(['gwo._setAccount', 'UA-01234567-8']);
+  _gaq.push(['gwo._trackPageview', '/0123456789/goal']);
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
@@ -115,18 +134,11 @@ This is directly followed by the second script which you will recognize as
 <!-- End of Google Website Optimizer Tracking Script -->
 {% endhighlight %}
 
-...
-
-the code, the segments, ..
-
 ### Google Analytics Tracking<a name="tracking">&nbsp;</a>
 
-...
+Google Website Optimizer will use that new Google Analytics profile to track each test page impression together with the variation that was served to the user. It will of course also use it to track the conversion page impressions and from the two it will know which variation resulted in how many conversions.
 
 ### Demo<a name="demo">&nbsp;</a>
-
-![GWO variations](/dfpadsenseoptimiser/img/gwo-variations.png "Google Website Optimizer variations")
-
 
 See it here inside an iframe.
 
