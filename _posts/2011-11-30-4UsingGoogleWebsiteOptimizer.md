@@ -25,7 +25,7 @@ Lets assume you have a download button on your website and you want to use the b
 <style>
 .gwo_test_object { padding: 5px; background: #888888; border: 1px solid #000000;}
 </style>
-<a href="/dfpadsenseoptimiser/gwo-conversion-page.html" class="gwo_test_object">Test Object</a>
+<a href="#gwo-conversion-page" class="gwo_test_object">Test Object</a>
 
 &nbsp;
 
