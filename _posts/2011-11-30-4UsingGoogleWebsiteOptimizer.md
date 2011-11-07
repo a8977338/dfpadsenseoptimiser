@@ -22,7 +22,10 @@ Lets assume you have a download button on your website and you want to use the b
 <button class="siteopt_test_object">Test Object</button>
 {% endhighlight %}
 
-<iframe src="/dfpadsenseoptimiser/gwo-test-page.html" width="580" height="60" frameborder="0"><p>Your browser does not support iframes.</p></iframe>
+<style>
+.siteopt_test_object { padding: 5px; background: #888888; border: 1px solid #000000;}
+</style>
+<button class="siteopt_test_object">Test Object</button>
 
 You want to define multiple layouts of this button and serve them to your users to see which layout gets the most clicks. GWO is developed just for this purpose.
 
@@ -122,7 +125,7 @@ the code, the segments, ..
 
 ### Demo<a name="demo">&nbsp;</a>
 
-<style>
-.siteopt_test_object { padding: 5px; background: #66FF66; border: 2px solid #006600;}
-</style>
-<button class="siteopt_test_object">Test Object</button>
+See it here inside an iframe.
+
+<iframe src="/dfpadsenseoptimiser/gwo-test-page.html" width="580" height="60" frameborder="0"><p>Your browser does not support iframes.</p></iframe>
+
