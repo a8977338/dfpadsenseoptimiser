@@ -33,7 +33,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
 {% endhighlight %}
 
-In a nutshell the above code identifies you AdSense account (_google_ad_client*), the ad unit (_google_ad_slot*) and its dimensions (_google_ad_width_ and _google_ad_height*). Then a Google AdSense script is loaded which will eventually put an advert onto your website.
+In a nutshell the above code identifies you AdSense account (*google_ad_client*), the ad unit (*google_ad_slot*) and its dimensions (*google_ad_width_ and _google_ad_height*). Then a Google AdSense script is loaded which will eventually put an advert onto your website.
 
 ### Dynamic Ad Styling<a name="styling">&nbsp;</a>
 
@@ -72,7 +72,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
 Notice that the default code is not changed at all. Instead there is a new script block just before it in which some parameters are defined that the Google code will interpret.
 
-This way you can set the color scheme for the ad border (_google_color_border*), background (_google_color_bg*), link (_google_color_link*), url (_google_color_url*) and text (_google_color_text*).
+This way you can set the color scheme for the ad border (*google_color_border*), background (*google_color_bg*), link (*google_color_link*), url (*google_color_url*) and text (*google_color_text*).
 
 {% highlight javascript %}
 google_color_border = '333333';
@@ -110,7 +110,7 @@ Usually AdSense adverts are served in an _iframe_ (and another _iframe_ therein)
 
 ### Sandbox Mode<a name="sandbox">&nbsp;</a>
 
-While applying this tutorial you might want to sandbox your ads in order to avoid self-inflicted links from being counted. Google seems to provide a switch for that (_google_test*).
+While applying this tutorial you might want to sandbox your ads in order to avoid self-inflicted links from being counted. Google seems to provide a switch for that (*google_test*).
 
 {% highlight html %}
 <script type="text/javascript"><!--
