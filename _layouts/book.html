@@ -60,11 +60,13 @@
             <div>
 <!-- adsense here -->
             </div>
+{% if page.submenu %}
             <h3>Chapter Contents</h3>
             <ul>
           {% for item in page.submenu %}
               <li><a href="#{{ item.hook }}">{{ item.title }}</a></li>
           {% endfor %}
+{% endif %}
             </ul>
           </div>
         </div>
