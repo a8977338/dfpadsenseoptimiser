@@ -3,6 +3,7 @@ layout: "book"
 title: "Chapter 4 - Using Google Website Optimizer"
 category: book
 permalink: "/book/chapter-4-using-google-website-optimizer.html"
+abstract: "Google Website Optimizer is a tool designed to optimize conversion rates for landing pages and other parts of a website. In this chapter you will learn the basic principles of it and see how it can be applied to your website."
 submenu:
   - { hook: "integration", title: "Integration" }
   - { hook: "tracking",    title: "Google Analytics Tracking" }
