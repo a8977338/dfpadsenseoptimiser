@@ -33,7 +33,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
 {% endhighlight %}
 
-In a nutshell the above code identifies you AdSense account (_google_ad_client_), the ad unit (_google_ad_slot_) and its dimensions (_google_ad_width_ and _google_ad_height_). Then a Google AdSense script is loaded which will eventually put an advert onto your website.
+In a nutshell the above code identifies you AdSense account (_google_ad_client*), the ad unit (_google_ad_slot*) and its dimensions (_google_ad_width_ and _google_ad_height*). Then a Google AdSense script is loaded which will eventually put an advert onto your website.
 
 ### Dynamic Ad Styling<a name="styling">&nbsp;</a>
 
@@ -41,7 +41,7 @@ When you create a new ad unit using the Google AdSense web interface you can mod
 
 Before explaining the existing options please be aware of the following paragraph from the [Google AdSenseTM Online Standard Terms and Conditions](https://www.google.com/adsense/localized-terms?rc=GB "Google AdSenseTM Online Standard Terms and Conditions (localized for GB)").
 
-> 16.2    Save as permitted by law, You will not modify, adapt, translate, prepare derivative works from, decompile, reverse engineer, disassemble or otherwise attempt to derive source code from any Google services, software, or documentation, or create or attempt to create a substitute or similar service or product through use of or access to the Programme or proprietary information related thereto.
+> 16.2 (*Save as permitted by law, You will not modify, adapt, translate, prepare derivative works from, decompile, reverse engineer, disassemble or otherwise attempt to derive source code from any Google services, software, or documentation, or create or attempt to create a substitute or similar service or product through use of or access to the Programme or proprietary information related thereto.
 
 Modification and adaption are both very soft terms arguably might prohibit what is done in this tutorial. However I believe that the steps described in the following paragraphs and chapters __do not__ violate these terms as they a) do not change any Google code, b) realize in javascript what can be done using the Google AdSense web interface anyway.
 
@@ -72,7 +72,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
 Notice that the default code is not changed at all. Instead there is a new script block just before it in which some parameters are defined that the Google code will interpret.
 
-This way you can set the color scheme for the ad border (_google_color_border_), background (_google_color_bg_), link (_google_color_link_), url (_google_color_url_) and text (_google_color_text_).
+This way you can set the color scheme for the ad border (_google_color_border*), background (_google_color_bg*), link (_google_color_link*), url (_google_color_url*) and text (_google_color_text*).
 
 {% highlight javascript %}
 google_color_border = '333333';
@@ -110,7 +110,7 @@ Usually AdSense adverts are served in an _iframe_ (and another _iframe_ therein)
 
 ### Sandbox Mode<a name="sandbox">&nbsp;</a>
 
-While applying this tutorial you might want to sandbox your ads in order to avoid self-inflicted links from being counted. Google seems to provide a switch for that (_google_test_).
+While applying this tutorial you might want to sandbox your ads in order to avoid self-inflicted links from being counted. Google seems to provide a switch for that (_google_test*).
 
 {% highlight html %}
 <script type="text/javascript"><!--
