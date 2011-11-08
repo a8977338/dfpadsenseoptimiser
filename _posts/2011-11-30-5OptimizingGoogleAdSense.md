@@ -61,7 +61,8 @@ With a little more effort you can also test different positions for your AdSense
 {% highlight html %}
 <script>utmx_section("gwo_adsense_position")</script>
 <script type="text/javascript"><!--
-var ad_positions['top'] = { slot: "0123456789", width: 125, height: 125 }
+var ad_positions = new Array();
+ad_positions['top'] = { slot: "0123456789", width: 200, height: 200 }
 //-->
 </script>
 </noscript>
@@ -70,28 +71,26 @@ var ad_positions['top'] = { slot: "0123456789", width: 125, height: 125 }
 <script type="text/javascript"><!--
 google_ad_client = "ca-pub-0123456789abcdef";
 if (ad_positions['top']) {
+  console.log('ad position: top');
   google_ad_slot =   ad_positions['top'].slot;
   google_ad_width =  ad_positions['top'].width;
   google_ad_height = ad_positions['top'].height;
+  document.write('<scr'+'ipt type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></scr'+'ipt>');
 } else { google_ad_slot = false; }
 //-->
-</script>
-<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
 
 <!-- somewhere at the bottom of your page -->
 <script type="text/javascript"><!--
 google_ad_client = "ca-pub-0123456789abcdef";
 if (ad_positions['bottom']) {
-  google_ad_slot =   ad_positions['top'].slot;
-  google_ad_width =  ad_positions['top'].width;
-  google_ad_height = ad_positions['top'].height;
+  console.log('ad position: bottom');
+  google_ad_slot =   ad_positions['bottom'].slot;
+  google_ad_width =  ad_positions['bottom'].width;
+  google_ad_height = ad_positions['bottom'].height;
+  document.write('<scr'+'ipt type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></scr'+'ipt>');
 } else { google_ad_slot = false; }
 //-->
-</script>
-<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
 {% endhighlight %}
 
@@ -102,7 +101,8 @@ This section can then be replaced by a variation like the following.
 {% highlight html %}
 <script>utmx_section("gwo_adsense_position")</script>
 <script type="text/javascript"><!--
-var ad_positions['bottom'] = { slot: "0123456789", width: 125, height: 125 }
+var ad_positions = new Array();
+ad_positions['bottom'] = { slot: "0123456789", width: 200, height: 200 }
 //-->
 </script>
 </noscript>
