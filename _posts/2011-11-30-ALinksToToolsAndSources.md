@@ -20,6 +20,7 @@ submenu:
 * [DoubleClick For Publishers](http://www.google.com/dfp "DoubleClick For Publishers homepage"), free sign up available for small businesses (optional)
 
 * [GWO Duration Calculator](https://www.google.com/analytics/siteopt/siteopt/help/calculator.html "Google Website Optimizer Duration Calculator"), This handy calculator helps you estimate the potential duration of your experiment.
+* [Google Adsense Generator](http://www.adsense-generator.com/ "Google Adsense Generator"), handy code generator for Adsense ad units including styling options
 
 ### Sources<a name="sources">&nbsp;</a>
 
