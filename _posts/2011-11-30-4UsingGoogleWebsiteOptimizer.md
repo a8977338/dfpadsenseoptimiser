@@ -42,7 +42,7 @@ There are three components.
 2. The _page section_ for your test page
 3. The _conversion script_ for your _conversion page_ (the page the user jumps to when he clicks your link)
 
-#### 1. Control and Tracking Script
+###### 1. Control and Tracking Script
 
 On the so called _test page_ you need to install two scripts.
 
@@ -85,7 +85,7 @@ You will notice that GWO uses your existing Google Analytics account and creates
 
 This page doesn't exist but is used to track the number of tests being run. This new profile will not show up on your Google Analytics account.
 
-#### 2. Page Section
+###### 2. Page Section
 
 The next part is also located on the _test page_. It consists of two tags that frame the bit of markup you want to create variations for.
 
@@ -118,7 +118,7 @@ A variation could look like this.
 
 So if the user is served the variation he will see a green button instead of a grey one.
 
-#### 3. Conversion Script
+###### 3. Conversion Script
 
 On the page your button links to you have to install the conversion script_. Again this is a simple Google Analytics tracking script that links to the same profile as the one on the _test page_ only this time the URL is: _/0123456789/goal_
 
@@ -181,3 +181,8 @@ Below this sentence the example is shown inside an iframe.
 
 <iframe src="/dfpadsenseoptimiser/gwo-test-page.html" width="580" height="60" frameborder="0"><p>Your browser does not support iframes.</p></iframe>
 
+The above test then produces a report like the following. Based on which you can choose the optimal layout after you gathered enough data.
+
+![Google Website Optimizer report](/dfpadsenseoptimiser/google-website-optimizer-report.png "Google Website Optimizer report")
+
+To find get an idea of how long you should run your tests you should take a look at the [Google Website Optimizer Duration Calculator](https://www.google.com/analytics/siteopt/siteopt/help/calculator.html "Google Website Optimizer Duration Calculator").
