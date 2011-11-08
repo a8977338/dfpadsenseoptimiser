@@ -16,6 +16,8 @@ This tutorial can be applied to all websites no matter what technology you use. 
 
 Other than that you need to have active and working accounts for the Google technologies used in this book.
 
+###### Required
+
 <a name="adsense">&nbsp;</a>
 ![Google AdSense](/dfpadsenseoptimiser/img/google-adsense-logo.gif "Google AdSense logo")
 
@@ -40,6 +42,8 @@ Google Website Optimizer is a tool for A/B and Multivariate Testing. It is origi
 This tool is the key ingredient to this tutorial.
 
 [Sign up for Google Website Optimizer here](http://www.google.com/websiteoptimizer "Google Website Optimizer homepage")
+
+###### Optional
 
 <a name="doubleclick">&nbsp;</a>
 ![DoubleClick For Publishers](/dfpadsenseoptimiser/img/doubleclick-for-publishers-logo.png "DoubleClick For Publishers logo")
