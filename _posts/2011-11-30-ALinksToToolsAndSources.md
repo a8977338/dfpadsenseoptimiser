@@ -18,7 +18,6 @@ submenu:
 * [Google Analytics](http://www.google.com/analytics/ "Google Analytics homepage"), second essential of this book
 * [Google Website Optimizer](http://www.google.com/websiteoptimizer "Google Website Optimizer homepage"), third and last essential of this book
 * [DoubleClick For Publishers](http://www.google.com/dfp "DoubleClick For Publishers homepage"), free sign up available for small businesses (optional)
-
 * [GWO Duration Calculator](https://www.google.com/analytics/siteopt/siteopt/help/calculator.html "Google Website Optimizer Duration Calculator"), This handy calculator helps you estimate the potential duration of your experiment.
 * [Google Adsense Generator](http://www.adsense-generator.com/ "Google Adsense Generator"), handy code generator for Adsense ad units including styling options
 
