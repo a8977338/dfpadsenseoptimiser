@@ -8,10 +8,9 @@ submenu:
   - { hook: "integration",  title: "Combining AdSense and Website Optimizer" }
   - { hook: "styling",      title: "Multivariate Ad Styling" }
   - { hook: "positioning",  title: "Multivariate Ad Positioning" }
-  - { hook: "analytics",    title: "Google Analytics" }
-  - { hook: "tracking",     title: "Tracking Ad Conversion" }
-  - { hook: "guestimation", title: "Guestimation" }
   - { hook: "demo",         title: "Demo" }
+  - { hook: "tracking",     title: "Tracking Ad Click Conversion" }
+  - { hook: "analytics",    title: "Ignore all GWO reports" }
 ---
 ## Chapter 5 - Optimizing Google AdSense with Google Website Optimizer
 
@@ -50,7 +49,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
 {% endhighlight %}
 
-Notice that the dynamic styling part is simply wrapped in a _page section_ bounded by a section start tag (_<script>utmx_section("gwo_adsense_section")</script>_) and end tag (_</noscript>_).
+Notice that the dynamic styling part is simply wrapped in a _page section_ bounded by a section start tag and end tag.
 
 This way we can set up a multivariate test in Google Website Optimizer with many variations of the color scheme section.
 
@@ -84,18 +83,34 @@ With this variation the same ad would be placed in the _bottom_ position instead
 
 There are many ways to achieve the same thing so you might want to experiment to find a solution that is more suitable to your situation. Javascript skill are required!
 
-### Google Analytics<a name="analytics">&nbsp;</a>
-
-default integration vs optimizer setup
-
-### Tracking Ad Conversion<a name="tracking">&nbsp;</a>
-
-...
-
-### Guestimation<a name="guestimation">&nbsp;</a>
-
-...
-
 ### Demo<a name="demo">&nbsp;</a>
 
-code, example, ..
+[Click here](/dfpadsenseoptimiser/gwo-adsense-test-page.html) to see a demonstration of the above code.
+
+### Tracking Ad Click Conversion<a name="tracking">&nbsp;</a>
+
+The above was easy so far. Now things get a little more complicated.
+
+Google Website Optimizer uses a hidden Google Analytics profile to track test and conversion pages. This works well for testing landing pages and with only small adjustments can easily work for other user interface tests.
+
+However Google AdSense is a special case as we can not possibly add the _conversion script_ to the ad tarkets!
+
+There are two possible ways to solve this.
+
+The first and maybe obvious solution is to create a script that monitors if the ads were clicked and then use [Google Analytics Event Tracking](http://code.google.com/apis/analytics/docs/tracking/eventTrackerGuide.html "Google Analytics Event Tracking") to track conversions.
+
+This approach has two drawbacks. First of all AdSense ad units are served inside iframes and therefor are inaccessible for your script so you can not actually track the ad clicks. The best thing you can do is to _guesstimate_ the clicks by monitoring the _mouse position_ and the current window loosing _focus_ and when the mouse was over an advert when the focu was lost you can guess that the user clicked on the ad. But unfortunately there are situations that will not trigger your script but should and others that will but shouldn't. You can read about such an approach [here](http://www.bennadel.com/blog/1752-Tracking-Google-AdSense-Clicks-With-jQuery-And-ColdFusion.htm "Blog post: Tracking Google AdSense Clicks With jQuery And ColdFusion").
+
+The other drawback is that you can not be entirely sure if tracking ad clicks complies to the Google AdSense terms. I would think it's fine but it's a sort of grey area best to avoid.
+
+When you're a premium publisher you probably don't face the iframe problem and you could easily attach javascript event to the ads which you can use for tracking the reral clicks. Still the legal situation remains uncertain.
+
+This is not the recommended way to do it!
+
+### Ignore all GWO reports<a name="analytics">&nbsp;</a>
+
+The second approach takes a different route altogether. It acknowledges the fact that the GWO way of tracking conversions is not possible for AdSense ad clicks.
+
+If you already used Google AdSense before you will probably know that it can be easily connected to your Google Analytics account. This allows you to see the AdSense Revenue for each content, referrer or other analytics segment.
+
+So the idea is to instead of using the Google Website Optimizer reporting to build segments that represent the the current _test variation_ and then consult your Google Analytics account for a detailed report on AdSense Revenue per test variation.

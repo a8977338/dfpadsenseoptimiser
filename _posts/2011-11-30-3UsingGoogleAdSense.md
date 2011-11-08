@@ -106,7 +106,7 @@ Being a premium publisher brings more options to influence the ad style than jus
 
 There are other options that let you influence the font sizes as well but the biggest difference is the ad itself.
 
-Usually AdSense adverts are served in an _iframe_ (and another _iframe_ therein) which takes it deliberately and completely takes the ad out of your control. This also has an effect on the outcome of this tutorial as tracking ad conversions becomes quite difficult as you will see in the next chapters. Premium publishers though can get their adverts in _div_ elements which allows to easily apply custom CSS rules and even to track ad clicks (without interfering!).
+Usually AdSense adverts are served in an _iframe_ (and another _iframe_ therein) which takes it deliberately and completely takes the ad out of your control. This also has an effect on the outcome of this tutorial as tracking ad conversions becomes quite difficult as you will see in the next chapters. Premium publishers though can get their adverts in _div_ elements which allows to easily apply custom CSS rules.
 
 > Todo: give examples..
 
