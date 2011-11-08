@@ -14,11 +14,12 @@ submenu:
 
 ### Tools<a name="tools">&nbsp;</a>
 
-* [Google AdSense here](http://www.google.com/adsense "Google AdSense homepage")
-* [Google Analytics here](http://www.google.com/analytics/ "Google Analytics homepage")
-* [Google Website Optimizer here](http://www.google.com/websiteoptimizer "Google Website Optimizer homepage")
-* [Google Website Optimizer Duration Calculator](https://www.google.com/analytics/siteopt/siteopt/help/calculator.html "Google Website Optimizer Duration Calculator")
-* [DoubleClick For Publishers here](http://www.google.com/dfp "DoubleClick For Publishers homepage")
+* [Google AdSense](http://www.google.com/adsense "Google AdSense homepage"), the obvious first essential of this book
+* [Google Analytics](http://www.google.com/analytics/ "Google Analytics homepage"), second essential of this book
+* [Google Website Optimizer](http://www.google.com/websiteoptimizer "Google Website Optimizer homepage"), third and last essential of this book
+* [DoubleClick For Publishers](http://www.google.com/dfp "DoubleClick For Publishers homepage"), free sign up available for small businesses (optional)
+
+* [GWO Duration Calculator](https://www.google.com/analytics/siteopt/siteopt/help/calculator.html "Google Website Optimizer Duration Calculator"), This handy calculator helps you estimate the potential duration of your experiment.
 
 ### Sources<a name="sources">&nbsp;</a>
 
