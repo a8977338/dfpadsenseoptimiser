@@ -183,6 +183,6 @@ Below this sentence the example is shown inside an iframe.
 
 The above test then produces a report like the following. Based on which you can choose the optimal layout after you gathered enough data.
 
-![Google Website Optimizer report](/dfpadsenseoptimiser/google-website-optimizer-report.png "Google Website Optimizer report")
+![Google Website Optimizer report](/dfpadsenseoptimiser/img/google-website-optimizer-report.png "Google Website Optimizer report")
 
 To find get an idea of how long you should run your tests you should take a look at the [Google Website Optimizer Duration Calculator](https://www.google.com/analytics/siteopt/siteopt/help/calculator.html "Google Website Optimizer Duration Calculator").
