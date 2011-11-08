@@ -14,7 +14,7 @@ submenu:
 ---
 ## Chapter 5 - Optimizing Google AdSense with Google Website Optimizer
 
-@todo write
+todo write
 
 ### Combining AdSense and Website Optimizer<a name="integration">&nbsp;</a>
 
