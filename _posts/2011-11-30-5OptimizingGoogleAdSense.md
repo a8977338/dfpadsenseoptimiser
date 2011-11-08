@@ -110,6 +110,8 @@ var ad_positions['bottom'] = { slot: "0123456789", width: 125, height: 125 }
 
 With this variation the same ad would be placed in the _bottom_ position instead of the _top_ one.
 
+There are many ways to achieve the same thing so you might want to experiment to find a solution that is more suitable to your situation. Javascript skill are required!
+
 ### Google Analytics<a name="analytics">&nbsp;</a>
 
 default integration vs optimizer setup
