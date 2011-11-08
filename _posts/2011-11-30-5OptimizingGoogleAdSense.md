@@ -26,7 +26,7 @@ In the previous two chapters you will have noticed the obvious similarity betwee
 Take a look at the following code and try to make sense of it.
 
 {% highlight html %}
-<script>utmx_section("gwo_adsense_section")</script>
+<script>utmx_section("gwo_adsense_style")</script>
 <script type="text/javascript"><!--
 google_color_border = '000000';
 google_color_bg     = 'DDDDDD';
@@ -56,7 +56,59 @@ This way we can set up a multivariate test in Google Website Optimizer with many
 
 ### Multivariate Ad Positioning<a name="positioning">&nbsp;</a>
 
-...
+With a little more effort you can also test different positions for your AdSense ads. Consider the following code.
+
+{% highlight html %}
+<script>utmx_section("gwo_adsense_position")</script>
+<script type="text/javascript"><!--
+var ad_positions['top'] = { slot: "0123456789", width: 125, height: 125 }
+//-->
+</script>
+</noscript>
+
+<!-- somewhere at the top of your page -->
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-0123456789abcdef";
+if (ad_positions['top']) {
+  google_ad_slot =   ad_positions['top'].slot;
+  google_ad_width =  ad_positions['top'].width;
+  google_ad_height = ad_positions['top'].height;
+} else { google_ad_slot = false; }
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+<!-- somewhere at the bottom of your page -->
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-0123456789abcdef";
+if (ad_positions['bottom']) {
+  google_ad_slot =   ad_positions['top'].slot;
+  google_ad_width =  ad_positions['top'].width;
+  google_ad_height = ad_positions['top'].height;
+} else { google_ad_slot = false; }
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+{% endhighlight %}
+
+The above code defines two ad positions (_top_ and _bottom_) which will only be filled when a variable (_ad_positions['top']_ or _ad_positions['bottom']_) is set. These variables are set in the first section which again is a Google Website Optimizer section.
+
+This section can then be replaced by a variation like the following.
+
+{% highlight html %}
+<script>utmx_section("gwo_adsense_position")</script>
+<script type="text/javascript"><!--
+var ad_positions['bottom'] = { slot: "0123456789", width: 125, height: 125 }
+//-->
+</script>
+</noscript>
+{% endhighlight %}
+
+With this variation the same ad would be placed in the _bottom_ position instead of the _top_ one.
 
 ### Google Analytics<a name="analytics">&nbsp;</a>
 
