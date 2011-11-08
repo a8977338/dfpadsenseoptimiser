@@ -59,37 +59,11 @@ This way we can set up a multivariate test in Google Website Optimizer with many
 With a little more effort you can also test different positions for your AdSense ads. Consider the following code.
 
 {% highlight html %}
-<script>utmx_section("gwo_adsense_position")</script>
-<script type="text/javascript"><!--
-var ad_positions = new Array();
-ad_positions['top'] = { slot: "0123456789", width: 200, height: 200 }
-//-->
-</script>
-</noscript>
+{% include gwo-adsense-test-section-code.html %}
 
-<!-- somewhere at the top of your page -->
-<script type="text/javascript"><!--
-google_ad_client = "ca-pub-0123456789abcdef";
-if (ad_positions['top']) {
-  google_ad_slot =   ad_positions['top'].slot;
-  google_ad_width =  ad_positions['top'].width;
-  google_ad_height = ad_positions['top'].height;
-  document.write('<scr'+'ipt type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></scr'+'ipt>');
-} else { google_ad_slot = false; }
-//-->
-</script>
+{% include gwo-adsense-position-1-code.html %}
 
-<!-- somewhere at the bottom of your page -->
-<script type="text/javascript"><!--
-google_ad_client = "ca-pub-0123456789abcdef";
-if (ad_positions['bottom']) {
-  google_ad_slot =   ad_positions['bottom'].slot;
-  google_ad_width =  ad_positions['bottom'].width;
-  google_ad_height = ad_positions['bottom'].height;
-  document.write('<scr'+'ipt type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></scr'+'ipt>');
-} else { google_ad_slot = false; }
-//-->
-</script>
+{% include gwo-adsense-position-2-code.html %}
 {% endhighlight %}
 
 The above code defines two ad positions (_top_ and _bottom_) which will only be filled when a variable (_ad_positions['top']_ or _ad_positions['bottom']_) is set. These variables are set in the first section which again is a Google Website Optimizer section.
