@@ -3,8 +3,11 @@ layout: "book"
 title: "Appendix B: AdSense Styling Options"
 category: book
 permalink: "/book/appendix-b-adSense-styling-options.html"
+abstract: "In this appendix you will find a list of all available styling options for Google AdSense ad units."
 ---
 ## Appendix B: AdSense Styling Options
+
+{{ page.abstract }}
 
 ###### Border Color
 
@@ -54,4 +57,4 @@ The style of the ad units corners (only visible when border color is visible). V
 google_ui_features = "rc:3";
 {% endhighlight %}
 
-
+Consult the inofficial [AdSense Generator tool](http://www.adsense-generator.com/ "AdSense Generator tool") to easily create the code for your styles.
