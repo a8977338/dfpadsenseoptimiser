@@ -12,6 +12,8 @@ submenu:
 
 ## Chapter 4 - Using Google Website Optimizer
 
+{{ page.abstract }}
+
 The best way to introduce you to Google Website Optimizer (GWO) is by doing it step by step on an example.
 
 Lets assume you have a download button on your website and you want to use the best performing layout so that a maximum number of users ends up clicking it.

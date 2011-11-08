@@ -13,6 +13,8 @@ submenu:
 ---
 ## Chapter 3 - Using Google AdSense
 
+{{ page.abstract }}
+
 Google AdSense already provides numerous [helpful resources](http://adsense.google.com/support/ "Google AdSense Support homepage") so I am not going to go into detail here but briefly explain how to implement it on your site and then move on to describe the parts necessary for optimizing your ad revenue.
 
 ### Standard Integration<a name="integration">&nbsp;</a>
