@@ -1,26 +1,57 @@
 ---
 layout: "book"
-title: "Appendix B: Notifying on ad clicks"
+title: "Appendix B: AdSense Styling Options"
 category: book
-permalink: "/book/appendix-b-notifying-on-ad-clicks.html"
+permalink: "/book/appendix-b-adSense-styling-options.html"
 ---
-## Appendix B: Notifying on ad  clicks
+## Appendix B: AdSense Styling Options
 
-As the targets of ad links are beyond our control we can not install Google Analytics code on them to count clicks. This means that in Google Website Optimizer we will not get any feedback about the performance of our variations.
+###### Border Color
 
-In order to measure their performance we have to use Google Analytics event tracking whenever an advert is clicked.
+Default AdSense ad units have a 1 pixel border of an one color ranging from values _#000000_ (black) to _#FFFFFF_ (white). Choose the same color as you pick for the background to make it "invisible".
 
-To avoid real (and illegal) ad clicks while testing this script we use the AdSense emulator from [appendix A](appendix-a-emulating-adsense "Appendix A: Emulating AdSense").
+{% highlight javascript %}
+google_color_border = "FFFFFF";
+{% endhighlight %}
 
-<script type="text/javascript">
-emulator_color_border = '000000';
-emulator_color_bg     = 'DDDDDD';
-emulator_color_link   = '000080';
-emulator_color_url    = '008000';
-emulator_color_text   = '000000';
-</script>
-<script type="text/javascript" src="js/adsense-emulator.js"><!-- nothing --></script>
+###### Background Color
 
-...
+The color of the ad units background. Values range from  _#000000_ (black) to _#FFFFFF_ (white).
 
-<script type="text/javascript" src="js/adclick-detector.js"><!-- nothing --></script>
+{% highlight javascript %}
+google_color_bg = "0000FF";
+{% endhighlight %}
+
+###### Link Color
+
+The color of the ad units top links. Values range from  _#000000_ (black) to _#FFFFFF_ (white).
+
+{% highlight javascript %}
+google_color_link = "FFFFFF";
+{% endhighlight %}
+
+###### Text Color
+
+The color of the ad units texts. Values range from  _#000000_ (black) to _#FFFFFF_ (white).
+
+{% highlight javascript %}
+google_color_text = "000000";
+{% endhighlight %}
+
+###### URL Color
+
+The color of the ad units bottom links. Values range from  _#000000_ (black) to _#FFFFFF_ (white).
+
+{% highlight javascript %}
+google_color_url = "008000";
+{% endhighlight %}
+
+###### Corner Style
+
+The style of the ad units corners (only visible when border color is visible). Values range from  _rc:0_ (0 pixel radius / square) to _rc:10_ (10 pixel radius / very round).
+
+{% highlight javascript %}
+google_ui_features = "rc:3";
+{% endhighlight %}
+
+
