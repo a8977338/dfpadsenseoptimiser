@@ -71,7 +71,6 @@ ad_positions['top'] = { slot: "0123456789", width: 200, height: 200 }
 <script type="text/javascript"><!--
 google_ad_client = "ca-pub-0123456789abcdef";
 if (ad_positions['top']) {
-  console.log('ad position: top');
   google_ad_slot =   ad_positions['top'].slot;
   google_ad_width =  ad_positions['top'].width;
   google_ad_height = ad_positions['top'].height;
@@ -84,7 +83,6 @@ if (ad_positions['top']) {
 <script type="text/javascript"><!--
 google_ad_client = "ca-pub-0123456789abcdef";
 if (ad_positions['bottom']) {
-  console.log('ad position: bottom');
   google_ad_slot =   ad_positions['bottom'].slot;
   google_ad_width =  ad_positions['bottom'].width;
   google_ad_height = ad_positions['bottom'].height;
