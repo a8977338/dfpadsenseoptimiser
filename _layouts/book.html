@@ -22,7 +22,7 @@
                 {% if page.url == post.url %}
               <li class="active">{{ post.title }}</li>
                 {% else%}
-              <li><a href="/dfpadsenseoptimiser{{ post.url }}">{{ post.title }}</a></li>
+              <li><a href="{{ post.url }}">{{ post.title }}</a></li>
                 {% endif%}
               {% endif %}
             {% endfor %}
