@@ -8,3 +8,4 @@ submenu:
 ---
 ## Chapter 6 - Using DoubleClick For Publishers
 
+{{ page.abstract }}

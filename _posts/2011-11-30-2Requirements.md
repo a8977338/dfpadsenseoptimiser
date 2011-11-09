@@ -11,6 +11,8 @@ submenu:
 ---
 ## Chapter 2 - Requirements
 
+{{ page.abstract }}
+
 This tutorial can be applied to all websites no matter what technology you use. You probably need to know a bit about javascript but that should be enough.
 
 Other than that you need to have active and working accounts for the Google technologies used in this book.
