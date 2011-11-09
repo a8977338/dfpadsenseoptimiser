@@ -10,7 +10,7 @@ abstract: "some abstract about the book"
   {% if post.layout == 'book' %}
 ### {{ post.title }}
 
-{{ post.abstract }} [read more](/dfpadsenseoptimiser{{ post.url }} "{{ post.title }}")
+{{ post.abstract }} [read more]({{ post.url }} "{{ post.title }}")
 
   {% endif %}
 {% endfor %}

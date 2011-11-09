@@ -12,7 +12,7 @@ abstract: "some abstract about the blog"
 
 {{ post.abstract }}
 
-[read more](/dfpadsenseoptimiser{{ post.url }} "{{ post.title }}")
+[read more]({{ post.url }} "{{ post.title }}")
 
   {% endif %}
 {% endfor %}
