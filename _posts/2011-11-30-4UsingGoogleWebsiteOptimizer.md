@@ -21,7 +21,7 @@ Lets assume you have a download button on your website and you want to use the b
 <style>
 .gwo_test_object { padding: 5px; background: #888888; border: 1px solid #000000;}
 </style>
-<a href="/dfpadsenseoptimiser/gwo-conversion-page.html" class="gwo_test_object">Test Object</a>
+<a href="/gwo-conversion-page.html" class="gwo_test_object">Test Object</a>
 {% endhighlight %}
 
 <style>
@@ -104,7 +104,7 @@ Following the above example the resulting code would look similar to this.
 .gwo_test_object { padding: 5px; background: #888888; border: 1px solid #000000;}
 </style>
 </noscript>
-<a href="/dfpadsenseoptimiser/gwo-conversion-page.html" class="gwo_test_object">Test Object</a>
+<a href="/gwo-conversion-page.html" class="gwo_test_object">Test Object</a>
 {% endhighlight %}
 
 The section name (_gwo_test_object_) is used to identify your test in the GWO web interface. In this case we framed the _style_ bit of our markup in order to replace it with a variation.
@@ -154,7 +154,7 @@ Additionally the _test page_ holds the test section itself.
 .gwo_test_object { padding: 5px; background: #888888; border: 1px solid #000000;}
 </style>
 </noscript>
-<a href="/dfpadsenseoptimiser/gwo-conversion-page.html" class="gwo_test_object">Test Object</a>
+<a href="/gwo-conversion-page.html" class="gwo_test_object">Test Object</a>
 {% endhighlight %}
 
 This test has three variations configured like the following.
@@ -180,10 +180,10 @@ Whenever a user visits this example he will get a variation or the original. The
 
 Below this sentence the example is shown inside an iframe.
 
-<iframe src="/dfpadsenseoptimiser/gwo-test-page.html" width="580" height="60" frameborder="0"><p>Your browser does not support iframes.</p></iframe>
+<iframe src="/gwo-test-page.html" width="580" height="60" frameborder="0"><p>Your browser does not support iframes.</p></iframe>
 
 The above test then produces a report like the following. Based on which you can choose the optimal layout after you gathered enough data.
 
-![Google Website Optimizer report](/dfpadsenseoptimiser/img/google-website-optimizer-report.png "Google Website Optimizer report")
+![Google Website Optimizer report](/img/google-website-optimizer-report.png "Google Website Optimizer report")
 
 To find get an idea of how long you should run your tests you should take a look at the [Google Website Optimizer Duration Calculator](https://www.google.com/analytics/siteopt/siteopt/help/calculator.html "Google Website Optimizer Duration Calculator").

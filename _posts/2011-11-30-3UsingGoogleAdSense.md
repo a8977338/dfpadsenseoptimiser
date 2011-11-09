@@ -83,7 +83,7 @@ google_color_url    = '008000';
 google_color_text   = '333333';
 {% endhighlight %}
 
-![ad style example "classic grey"](/dfpadsenseoptimiser/img/ad-unit-style-classic-grey.png "ad style example 'classic grey'")
+![ad style example "classic grey"](/img/ad-unit-style-classic-grey.png "ad style example 'classic grey'")
 
 {% highlight javascript %}
 google_color_border = 'CCCCCC';
@@ -93,7 +93,7 @@ google_color_url    = '0066CC';
 google_color_text   = '666666';
 {% endhighlight %}
 
-![ad style example "modern white"](/dfpadsenseoptimiser/img/ad-unit-style-modern-white.png "ad style example 'modern white'")
+![ad style example "modern white"](/img/ad-unit-style-modern-white.png "ad style example 'modern white'")
 
 Notice that the above code is not doing anything that couldn't be done with the Google AdSense web interface. On the contrary it has to be in Googles own interest that the conversion of its adverts is as high as possible (of course excluding fake conversions).
 

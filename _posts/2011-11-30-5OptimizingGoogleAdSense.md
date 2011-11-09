@@ -17,7 +17,7 @@ submenu:
 
 ### Combining AdSense and Website Optimizer<a name="integration">&nbsp;</a>
 
-In the previous two chapters you will have noticed the obvious similarity between [styling an AdSense advert](/dfpadsenseoptimiser/book/chapter-3-using-google-adsense.html#styling "Using Google AdSense - Dynamic Ad Styling") and the Website Optimizer example of [the colored button](http://a8977338.github.com/dfpadsenseoptimiser/book/chapter-4-using-google-website-optimizer.html#demo "Using Google Website Optimizer - Demo"). This is of course a deliberate choice which should make it easy to understand how a combination of both tools can look like.
+In the previous two chapters you will have noticed the obvious similarity between [styling an AdSense advert](/book/chapter-3-using-google-adsense.html#styling "Using Google AdSense - Dynamic Ad Styling") and the Website Optimizer example of [the colored button](http://a8977338.github.com/book/chapter-4-using-google-website-optimizer.html#demo "Using Google Website Optimizer - Demo"). This is of course a deliberate choice which should make it easy to understand how a combination of both tools can look like.
 
 ### Multivariate Ad Styling<a name="styling">&nbsp;</a>
 
@@ -84,7 +84,7 @@ There are many ways to achieve the same thing so you might want to experiment to
 
 ### Demo<a name="demo">&nbsp;</a>
 
-[Click here](/dfpadsenseoptimiser/gwo-adsense-test-page.html) to see a demonstration of the above code.
+[Click here](/gwo-adsense-test-page.html) to see a demonstration of the above code.
 
 ### Tracking Ad Click Conversion<a name="tracking">&nbsp;</a>
 
