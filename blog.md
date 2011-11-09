@@ -7,7 +7,7 @@ abstract: "some abstract about the blog"
 ## Optimizing Google AdSense
 
 {% for post in site.posts reversed %}
-  {% if post.category == 'blog' %}
+  {% if post.layout == 'blog' %}
 ### {{ post.title }}
 
 {{ post.abstract }}

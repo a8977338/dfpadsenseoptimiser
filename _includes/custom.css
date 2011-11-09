@@ -48,3 +48,14 @@
         border: 0;
       }
 
+      .topbar .brand a, .topbar .brand a:hover {
+        font-family: Times New Roman, Times New Roman, Times, serif;
+        font-style: italic;
+        background-color: inherit;
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      .topbar .brand a:hover {
+        text-decoration: underline;
+      }
