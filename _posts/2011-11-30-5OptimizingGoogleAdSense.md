@@ -114,3 +114,10 @@ The second approach takes a different route altogether. It acknowledges the fact
 If you already used Google AdSense before you will probably know that it can be easily connected to your Google Analytics account. This allows you to see the AdSense Revenue for each content, referrer or other analytics segment.
 
 So the idea is to instead of using the Google Website Optimizer reporting to build segments that represent the the current _test variation_ and then consult your Google Analytics account for a detailed report on AdSense Revenue per test variation.
+
+Consider the default Google Analytics code.
+
+{% highlight html %}
+{% include google-analytics-code.html %}
+{% endhighlight %}
+
