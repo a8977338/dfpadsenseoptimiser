@@ -1,7 +1,6 @@
 ---
 layout: "book"
 title: "Appendix A: Links to Tools and Sources"
-category: book
 permalink: "/book/appendix-a-links-to-tools-and-sources.html"
 abstract: "Here you find links to all tools used in this book as well as links to all kind of sources that helped in the process of writing it."
 submenu:

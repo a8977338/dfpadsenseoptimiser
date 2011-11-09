@@ -1,7 +1,6 @@
 ---
 layout: "book"
 title: "Appendix B: AdSense Styling Options"
-category: book
 permalink: "/book/appendix-b-adSense-styling-options.html"
 abstract: "In this appendix you will find a list of all available styling options for Google AdSense ad units."
 ---

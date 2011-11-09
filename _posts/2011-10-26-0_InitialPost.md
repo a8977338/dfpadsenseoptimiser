@@ -1,7 +1,6 @@
 ---
-layout: default
+layout: blog
 title: "Lets start this!"
-category: blog
 ---
 ## Lets start this!
 

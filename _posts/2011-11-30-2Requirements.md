@@ -1,7 +1,6 @@
 ---
 layout: "book"
 title: "Chapter 2 - Requirements"
-category: book
 permalink: "/book/chapter-2-requirements.html"
 abstract: "Read this chapter to find out about the requirements necessary to make this book work out for you."
 submenu:

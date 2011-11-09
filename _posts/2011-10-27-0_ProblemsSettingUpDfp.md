@@ -1,7 +1,6 @@
 ---
-layout: default
+layout: blog
 title: "Problems setting up DFP"
-category: blog
 ---
 ## Problems setting up DFP
 

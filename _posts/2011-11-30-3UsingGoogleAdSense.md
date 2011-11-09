@@ -1,7 +1,6 @@
 ---
 layout: "book"
 title: "Chapter 3 - Using Google AdSense"
-category: book
 permalink: "/book/chapter-3-using-google-adsense.html"
 abstract: "Learn everything you need to know about Google AdSense to optimize your ad revenue in this chapter. This covers the essentials necessary to apply this tutorial to your website."
 submenu:

@@ -31,7 +31,7 @@
             <h3>Table of Contents</h3>
             <ul>
             {% for post in site.posts reversed %}
-              {% if post.category == 'book' %}
+              {% if post.layout == 'book' %}
                 {% if page.url == post.url %}
               <li class="active">{{ post.title }}</li>
                 {% else%}

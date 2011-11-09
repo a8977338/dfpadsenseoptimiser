@@ -1,7 +1,6 @@
 ---
 layout: "book"
 title: "Chapter 5 - Optimizing Google AdSense"
-category: book
 permalink: "/book/chapter-5-optimizing-google-adsense-with-google-website-optimizer.html"
 abstract: "In the previous two chapters you have seen how to use both Google AdSense and Google Website Optimizer on their own. This chapter focusses on combining the two to optimize your AdSense revenue."
 submenu:

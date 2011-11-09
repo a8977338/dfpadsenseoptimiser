@@ -1,7 +1,6 @@
 ---
-layout: default
+layout: blog
 title: "AdSense set up and first ad on page"
-category: blog
 ---
 ## AdSense set up and first ad on page
 
