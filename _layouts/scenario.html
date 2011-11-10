@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include header.html %}
+
+  <body>
+
+    {% include topnav.html %}
+
+    <div class="container">
+
+      <div class="content">
+        {% include page_header.html %}
+        <div class="row">
+          <div class="span10">
+          {{ content }}
+          </div>
+          <div class="span4">
+            <h3>Table of Contents</h3>
+            <ul>
+            {% for post in site.posts reversed %}
+              {% if post.layout == 'book' %}
+                {% if page.url == post.url %}
+              <li class="active">{{ post.title }}</li>
+                {% else%}
+              <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endif%}
+              {% endif %}
+            {% endfor %}
+            </ul>
+            <br />
+            <h3>Step by Step Scenarios</h3>
+            <ul>
+            {% for post in site.posts reversed %}
+              {% if post.layout == 'scenario' %}
+                {% if page.url == post.url %}
+              <li class="active">{{ post.title }}</li>
+                {% else%}
+              <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endif%}
+              {% endif %}
+            {% endfor %}
+            </ul>
+            <br />
+            <div>
+              <script type="text/javascript"><!--
+              google_ad_client = "ca-pub-5588356258460519";
+              /* small */
+              google_alternate_ad_url = "http://placekitten.com/g/125/125";
+              google_ad_slot = "6094597372";
+              google_ad_width = 125;
+              google_ad_height = 125;
+              //-->
+              </script>
+              <script type="text/javascript"
+              src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+              </script>
+            </div>
+{% if page.submenu %}
+            <h3>Chapter Contents</h3>
+            <ul>
+          {% for item in page.submenu %}
+              <li><a href="#{{ item.hook }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+{% endif %}
+          </div>
+        </div>
+      </div>
+
+      {% include footer.html %}
+
+    </div> <!-- /container -->
+  </body>
+</html>
