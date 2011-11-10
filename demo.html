@@ -1,0 +1,25 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='"+gaJsHost+"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+      var pageTracker = _gat._getTracker('{{ site.google_analytics_id }}');
+      pageTracker._setVar('foobar set as var');
+      pageTracker._setVar(123);
+      pageTracker._setCustomVar(1, 'test_custom_var1', 'custom var, scope 1', 1);
+      pageTracker._setCustomVar(1, 'test_custom_var2', 'custom var, scope 2', 2);
+      pageTracker._setCustomVar(1, 'test_custom_var3', 'custom var, scope 3', 3);
+      pageTracker._trackPageview();
+    } catch(err) {}
+    </script>
+  </head>
+
+  <body>
+  </body>
+</html>
