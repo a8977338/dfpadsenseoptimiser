@@ -6,12 +6,24 @@
     <script type="text/javascript">// <![CDATA[
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', '{{ site.google_analytics_id }}']);
-    _gaq.push(['_setVar','foobar set as var']);
+    _gaq.push(['_setVar','asynchronous baby!']);
     _gaq.push(['_setVar',123]);
     _gaq.push(['_setVar','456']);
-    _gaq.push(['_setCustomVar',1, 'test_custom_var1', 'custom var, scope 1', 1]);
-    _gaq.push(['_setCustomVar',1, 'test_custom_var2', 'custom var, scope 2', 2]);
-    _gaq.push(['_setCustomVar',1, 'test_custom_var3', 'custom var, scope 3', 3]);
+    _gaq.push(['_setCustomVar',1, 'async_test_custom_var1_1', 'custom var, key 1, scope 1', 1]);
+    _gaq.push(['_setCustomVar',1, 'async_test_custom_var1_2', 'custom var, key 1, scope 2', 2]);
+    _gaq.push(['_setCustomVar',1, 'async_test_custom_var1_3', 'custom var, key 1, scope 3', 3]);
+    _gaq.push(['_setCustomVar',2, 'async_test_custom_var2_1', 'custom var, key 2, scope 1', 1]);
+    _gaq.push(['_setCustomVar',2, 'async_test_custom_var2_2', 'custom var, key 2, scope 2', 2]);
+    _gaq.push(['_setCustomVar',2, 'async_test_custom_var2_3', 'custom var, key 2, scope 3', 3]);
+    _gaq.push(['_setCustomVar',3, 'async_test_custom_var3_1', 'custom var, key 3, scope 1', 1]);
+    _gaq.push(['_setCustomVar',3, 'async_test_custom_var3_2', 'custom var, key 3, scope 2', 2]);
+    _gaq.push(['_setCustomVar',3, 'async_test_custom_var3_3', 'custom var, key 3, scope 3', 3]);
+    _gaq.push(['_setCustomVar',4, 'async_test_custom_var4_1', 'custom var, key 4, scope 1', 1]);
+    _gaq.push(['_setCustomVar',4, 'async_test_custom_var4_2', 'custom var, key 4, scope 2', 2]);
+    _gaq.push(['_setCustomVar',4, 'async_test_custom_var4_3', 'custom var, key 4, scope 3', 3]);
+    _gaq.push(['_setCustomVar',5, 'async_test_custom_var5_1', 'custom var, key 5, scope 1', 1]);
+    _gaq.push(['_setCustomVar',5, 'async_test_custom_var5_2', 'custom var, key 5, scope 2', 2]);
+    _gaq.push(['_setCustomVar',5, 'async_test_custom_var5_3', 'custom var, key 5, scope 3', 3]);
     _gaq.push(['_trackPageview']);
     (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
     // ]]>
