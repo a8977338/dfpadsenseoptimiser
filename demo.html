@@ -20,12 +20,12 @@
     <script type="text/javascript">// <![CDATA[
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', '{{ site.google_analytics_id }}']);
-    _gaq.push(['_setCustomVar',2, 'combination', utmx('combination'), 1]);
-    var value = [];
+    _gaq.push(['_setCustomVar',4, 'combination', utmx('combination_string'), 1]);
+    var sections = [];
     for (var section in utmx_global_vd) {
-      value.push(section+':'+utmx('variation_number', section));
+      sections.push(section+':'+utmx('variation_number', section));
     }
-    _gaq.push(['_setCustomVar',3, 'gwo_experiment_1', utmx('combination')+';'+value.join(';'), 1]);
+    _gaq.push(['_setCustomVar',3, 'gwo_experiment_1', sections.join(';'), 1]);
     _gaq.push(['_trackPageview']);
     (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
     // ]]>
