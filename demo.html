@@ -18,21 +18,17 @@
     <!-- End of Google Website Optimizer Control Script -->
 
     <script type="text/javascript">// <![CDATA[
-    var values = [ 'hund', 'katze', 'maus '];
-    console.log(values[new Date().getSeconds() % values.length]);
-    console.log('combination: '+utmx('combination'));
-
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', '{{ site.google_analytics_id }}']);
-    _gaq.push(['_setCustomVar',1, 'favourite animal', values[new Date().getSeconds() % values.length], 1]);
     _gaq.push(['_setCustomVar',2, 'combination', utmx('combination'), 1]);
+    var value = [];
+    for (var section in utmx_global_vd) {
+      value.push(section+':'+utmx('variation_number', section));
+    }
+    _gaq.push(['_setCustomVar',3, 'gwo_experiment_1', value.join(','), 1]);
     _gaq.push(['_trackPageview']);
     (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
     // ]]>
-
-    for (var section in utmx_global_vd) {
-      console.log('section "'+section+'" = '+utmx('variation_number', section));
-    }
     </script>  </head>
 
   <body>
