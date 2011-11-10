@@ -16,3 +16,13 @@ abstract: "some abstract about the book"
 {% endfor %}
 
 ..
+
+{% for post in site.posts reversed %}
+  {% if post.layout == 'scenario' %}
+### {{ post.title }}
+
+{{ post.abstract }} [read more]({{ post.url }} "{{ post.title }}")
+
+  {% endif %}
+{% endfor %}
+
