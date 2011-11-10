@@ -22,4 +22,8 @@ submenu:
 
 ### Sources<a name="sources">&nbsp;</a>
 
-* Blog: [Optimisation Beacon](http://www.optimisationbeacon.com/ "Optimisation Beacon - Tips & tools for web analytics and conversion optimisation"), Tips & tools for web analytics and conversion optimisation
+* Docs: [Google Analytics Tracking Code](http://code.google.com/apis/analytics/docs/tracking/home.html "Google Analytics Tracking Code - The documentation in this section exists to help you customize your tracking code for a wide variety of uses."), The documentation in this section exists to help you customize your tracking code for a wide variety of uses.
+* Blog: [Optimisation Beacon](http://www.optimisationbeacon.com/ "Optimisation Beacon - Tipps & tools for web analytics and conversion optimisation"), Tipps & tools for web analytics and conversion optimisation
+* Blog: [Analytics Talk](http://cutroni.com/blog/ "Analytics Talk - Untangling the world of web analytics"), Untangling the world of web analytics
+* Blog: [ROI Revolution](http://www.roirevolution.com/blog/ "ROI Revolution - Blog of a Data-Driven Online Marketing Agency"), Blog of a Data-Driven Online Marketing Agency
+* Blog: [Analytics Market](http://www.analyticsmarket.com/blog?redirect=no "Analytics Market - Is a one-stop resource for anything you can do with Google Analytics. Tips and tricks, product news, API tools, and more!"), Is a one-stop resource for anything you can do with Google Analytics. Tips and tricks, product news, API tools, and more!
