@@ -3,22 +3,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='"+gaJsHost+"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-    try {
-      var pageTracker = _gat._getTracker('{{ site.google_analytics_id }}');
-      pageTracker._setVar('foobar set as var');
-      pageTracker._setVar(123);
-      pageTracker._setCustomVar(1, 'test_custom_var1', 'custom var, scope 1', 1);
-      pageTracker._setCustomVar(1, 'test_custom_var2', 'custom var, scope 2', 2);
-      pageTracker._setCustomVar(1, 'test_custom_var3', 'custom var, scope 3', 3);
-      pageTracker._trackPageview();
-    } catch(err) {}
-    </script>
-  </head>
+    <script type="text/javascript">// <![CDATA[
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '{{ site.google_analytics_id }}']);
+    _gaq.push(['_setVar','foobar set as var']);
+    _gaq.push(['_setVar',123]);
+    _gaq.push(['_setVar','456']);
+    _gaq.push(['_setCustomVar',1, 'test_custom_var1', 'custom var, scope 1', 1]);
+    _gaq.push(['_setCustomVar',1, 'test_custom_var2', 'custom var, scope 2', 2]);
+    _gaq.push(['_setCustomVar',1, 'test_custom_var3', 'custom var, scope 3', 3]);
+    _gaq.push(['_trackPageview']);
+    (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
+    // ]]>
+    </script>  </head>
 
   <body>
   </body>
