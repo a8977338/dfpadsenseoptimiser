@@ -30,16 +30,9 @@
     (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
     // ]]>
 
-    console.log('section: '+utmx( "section" ));
-    console.log('url: '+utmx( "url" ));
-    console.log('variation: '+utmx( "variation" ));
-    console.log('variation_content: '+utmx( "variation_content" ));
-    console.log('variation_number: '+utmx( "variation_number" ));
-    console.log('combination: '+utmx( "combination" ));
-    console.log('combination_string: '+utmx( "combination_string" ));
-    console.log('domain_hash: '+utmx( "domain_hash" ));
-    console.log('live: '+utmx( "live" ));
-    console.log('preview: '+utmx( "preview" ));
+    for (var section in utmx_global_vd) {
+      console.log('section "'+section+'" = '+utmx('variation_number', section));
+    }
     </script>  </head>
 
   <body>
