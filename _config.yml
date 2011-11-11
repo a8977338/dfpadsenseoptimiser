@@ -1,6 +1,5 @@
-auto:     false
+auto:     true
 pygments: true
 
 # site wide settings
-google_adsense_publisher_id: ca-pub-4766859902889277
 google_analytics_id:         UA-26812449-1
