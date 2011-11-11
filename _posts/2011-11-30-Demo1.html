@@ -44,6 +44,19 @@ permalink: "/demo/1-plain-gwo-experiment.html"
 </head>
 <body>
   <h1>{{ page.title }}</h1>
+  <script>
+  try {
+     if(utmx('combination') != undefined){
+       document.write('<p>Combination: '+utmx('combination')+'</p>');
+       document.write('<p>');
+       for (var section in utmx_global_vd) {
+         document.write(section ' = '+utmx('variation', section)+', ');
+       }
+       document.write('</p>');
+     }
+  }catch(err){}
+  </script>
+
   <script>utmx_section("nav_square")</script>
   <script type="text/javascript"><!--
   google_color_border = '000000';
