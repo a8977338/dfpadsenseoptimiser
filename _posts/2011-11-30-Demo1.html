@@ -50,7 +50,7 @@ permalink: "/demo/1-plain-gwo-experiment.html"
        document.write('<p>');
        document.write('<strong>Combination:</strong> '+utmx('combination'));
        for (var section in utmx_global_vd) {
-         document.write(', <strong>'+section+':</strong> '+utmx('combination'));
+         document.write(', <strong>'+section+':</strong> '+utmx('variation_number', section));
        }
        document.write('</p>');
      }
