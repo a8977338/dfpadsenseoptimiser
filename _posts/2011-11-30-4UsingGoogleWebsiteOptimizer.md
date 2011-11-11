@@ -11,6 +11,9 @@ submenu:
 
 ## Chapter 4 - Using Google Website Optimizer
 
+<br/>
+![Google Website Optimizer](/img/google-website-optimizer-logo.gif "Google Website Optimizer logo")
+
 {{ page.abstract }}
 
 The best way to introduce you to Google Website Optimizer (GWO) is by doing it step by step on an example.

@@ -8,4 +8,7 @@ submenu:
 ---
 ## Chapter 7 - Using DoubleClick For Publishers
 
+<br/>
+![DoubleClick For Publishers](/img/doubleclick-for-publishers-logo.png "DoubleClick For Publishers logo")
+
 {{ page.abstract }}

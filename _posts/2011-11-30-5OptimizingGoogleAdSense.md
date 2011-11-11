@@ -13,6 +13,9 @@ submenu:
 ---
 ## Chapter 5 - Optimizing Google AdSense with Google Website Optimizer
 
+<br/>
+![Google AdSense](/img/google-adsense-logo.gif "Google AdSense logo") &nbsp;&nbsp;&nbsp; ![Google Website Optimizer](/img/google-website-optimizer-logo.gif "Google Website Optimizer logo")
+
 {{ page.abstract }}
 
 ### Combining AdSense and Website Optimizer<a name="integration">&nbsp;</a>
@@ -85,38 +88,3 @@ There are many ways to achieve the same thing so you might want to experiment to
 ### Demo<a name="demo">&nbsp;</a>
 
 [Click here](/gwo-adsense-test-page.html) to see a demonstration of the above code.
-
-### Tracking Ad Click Conversion<a name="tracking">&nbsp;</a>
-
-The above was easy so far. Now things get a little more complicated.
-
-Google Website Optimizer uses a hidden Google Analytics profile to track test and conversion pages. This works well for testing landing pages and with only small adjustments can easily work for other user interface tests.
-
-However Google AdSense is a special case as we can not possibly add the _conversion script_ to the ad tarkets!
-
-There are two possible ways to solve this.
-
-The first and maybe obvious solution is to create a script that monitors if the ads were clicked and then use [Google Analytics Event Tracking](http://code.google.com/apis/analytics/docs/tracking/eventTrackerGuide.html "Google Analytics Event Tracking") to track conversions.
-
-This approach has two drawbacks. First of all AdSense ad units are served inside iframes and therefor are inaccessible for your script so you can not actually track the ad clicks. The best thing you can do is to _guesstimate_ the clicks by monitoring the _mouse position_ and the current window loosing _focus_ and when the mouse was over an advert when the focu was lost you can guess that the user clicked on the ad. But unfortunately there are situations that will not trigger your script but should and others that will but shouldn't. You can read about such an approach [here](http://www.bennadel.com/blog/1752-Tracking-Google-AdSense-Clicks-With-jQuery-And-ColdFusion.htm "Blog post: Tracking Google AdSense Clicks With jQuery And ColdFusion") and [here](http://supriyadisw.net/2006/07/adsense-clicks-tracker "Blog post: Adsense Clicks Tracker").
-
-The other drawback is that you can not be entirely sure if tracking ad clicks complies to the Google AdSense terms. I would think it's fine but it's a sort of grey area best to avoid.
-
-When you're a premium publisher you probably don't face the iframe problem and you could easily attach javascript event to the ads which you can use for tracking the reral clicks. Still the legal situation remains uncertain.
-
-This is not the recommended way to do it!
-
-### Ignore all GWO reports<a name="analytics">&nbsp;</a>
-
-The second approach takes a different route altogether. It acknowledges the fact that the GWO way of tracking conversions is not possible for AdSense ad clicks.
-
-If you already used Google AdSense before you will probably know that it can be easily connected to your Google Analytics account. This allows you to see the AdSense Revenue for each content, referrer or other analytics segment.
-
-So the idea is to instead of using the Google Website Optimizer reporting to build segments that represent the the current _test variation_ and then consult your Google Analytics account for a detailed report on AdSense Revenue per test variation.
-
-Consider the default Google Analytics code.
-
-{% highlight html %}
-{% include google-analytics-code.html %}
-{% endhighlight %}
-
