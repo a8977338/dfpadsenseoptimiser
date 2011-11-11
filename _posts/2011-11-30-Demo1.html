@@ -47,10 +47,10 @@ permalink: "/demo/1-plain-gwo-experiment.html"
   <script>
   try {
      if(utmx('combination') != undefined){
-       document.write('<p>Combination: '+utmx('combination')+'</p>');
        document.write('<p>');
+       document.write('<strong>Combination:</strong> '+utmx('combination'));
        for (var section in utmx_global_vd) {
-         document.write(section+' = '+utmx('variation_number', section)+', ');
+         document.write(', <strong>'+section+':</strong> '+utmx('combination'));
        }
        document.write('</p>');
      }
