@@ -1,0 +1,110 @@
+---
+layout: "demo"
+title: "2. Plain GWO Experiment"
+abstract: "This demo shows a GWO default installation. Drawbacks are: Conversions are not tracked!"
+permalink: "/demo/1-plain-gwo-experiment.html"
+---
+<head>
+  <!-- Google Website Optimizer Control Script -->
+  <script>
+  function utmx_section(){}function utmx(){}
+  (function(){var k='0985726625',d=document,l=d.location,c=d.cookie;function f(n){
+  if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.indexOf(';',i);return escape(c.substring(i+n.
+  length+1,j<0?c.length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;
+  d.write('<sc'+'ript src="'+
+  'http'+(l.protocol=='https:'?'s://ssl':'://www')+'.google-analytics.com'
+  +'/siteopt.js?v=1&utmxkey='+k+'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='
+  +new Date().valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
+  '" type="text/javascript" charset="utf-8"></sc'+'ript>')})();
+  </script>
+  <!-- End of Google Website Optimizer Control Script -->
+  <!-- Google Website Optimizer Tracking Script -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['gwo._setAccount', 'UA-26812449-2']);
+    _gaq.push(['gwo._trackPageview', '/0985726625/test']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <!-- End of Google Website Optimizer Tracking Script -->
+  <!-- Google Website Optimizer Tracking Script -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['gwo._setAccount', 'UA-26812449-2']);
+    _gaq.push(['gwo._trackPageview', '/0985726625/goal']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <!-- End of Google Website Optimizer Tracking Script -->
+</head>
+<body>
+  <h1>{{ page.title }}</h1>
+  <p>{{ page.abstract }}</p>
+  <script>
+  try {
+     if(utmx('combination') != undefined){
+       document.write('<p>');
+       document.write('<strong>Combination:</strong> '+utmx('combination'));
+       for (var section in utmx_global_vd) {
+         document.write(', <strong>'+section+':</strong> '+utmx('variation_number', section));
+       }
+       document.write('</p>');
+     }
+  }catch(err){}
+  </script>
+
+  <script>utmx_section("nav_square")</script>
+  <script type="text/javascript"><!--
+  google_color_border = '000000';
+  google_color_bg     = 'DDDDDD';
+  google_color_link   = '000080';
+  google_color_url    = '008000';
+  google_color_text   = '000000';
+  //-->
+  </script>
+  </noscript>
+  <script type="text/javascript"><!--
+  google_ad_client = "ca-pub-5588356258460519";
+  /* nav_square */
+  google_ad_slot = "6230940399";
+  google_ad_width = 200;
+  google_ad_height = 200;
+  //-->
+  </script>
+  <script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+  </script>
+
+  <p>above you see a 200x200 ad unit</p>
+
+  <script>utmx_section("small")</script>
+  <script type="text/javascript"><!--
+  google_color_border = '000000';
+  google_color_bg     = 'DDDDDD';
+  google_color_link   = '000080';
+  google_color_url    = '008000';
+  google_color_text   = '000000';
+  //-->
+  </script>
+  </noscript>
+  <script type="text/javascript"><!--
+  google_ad_client = "ca-pub-5588356258460519";
+  /* small */
+  google_ad_slot = "6094597372";
+  google_ad_width = 125;
+  google_ad_height = 125;
+  //-->
+  </script>
+  <script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+  </script>
+
+  <p>above you see a 125x125 ad unit</p>
+
+</body>
