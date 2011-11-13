@@ -40,14 +40,15 @@
               <script type="text/javascript"
               src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
               </script>
-              {% if page.submenu %}
+            </div>
+          {% if page.submenu %}
             <h3>Chapter Contents</h3>
             <ul>
           {% for item in page.submenu %}
               <li><a href="#{{ item.hook }}">{{ item.title }}</a></li>
           {% endfor %}
-        </ul>
-{% endif %}
+            </ul>
+          {% endif %}
           </div>
         </div>
       </div>

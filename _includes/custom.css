@@ -59,5 +59,10 @@
       .topbar .brand a:hover {
         text-decoration: underline;
       }
-      
+
+      .span10 {
+          margin-right: 20px;
+          width: 560px;
+      }
+
       .scenario img {border:2px solid #EEEEEE;}
