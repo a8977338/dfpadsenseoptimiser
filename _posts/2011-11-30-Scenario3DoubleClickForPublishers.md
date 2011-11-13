@@ -1,7 +1,7 @@
 ---
 layout: "scenario"
 title: "Scenario 3 - Optimizing through DoubleClick For Publishers"
-permalink: "/book/scenario-3-optimizing-through-doubleclick-for-publishers.html"
+permalink: "/scenarios/scenario-3-optimizing-through-doubleclick-for-publishers.html"
 abstract: "This chapter provides a detailed but not at all technical step by step guide for the people operating the adverts. Start reading here if you to skip the background and get started right away."
 submenu:
   - { hook: "setup",     title: "<strong>Setup</strong>" }

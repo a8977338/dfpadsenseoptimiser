@@ -1,7 +1,7 @@
 ---
 layout: "scenario"
 title: "Scenario 1 - Optimizing a Standard AdSense Integration"
-permalink: "/book/scenario-1-optimizing-a-standard-adsense-integration.html"
+permalink: "/scenarios/scenario-1-optimizing-a-standard-adsense-integration.html"
 abstract: "This chapter provides a detailed but not at all technical step by step guide for the people operating the adverts. Start reading here if you to skip the background and get started right away."
 submenu:
   - { hook: "setup",     title: "<strong>Setup</strong>" }
