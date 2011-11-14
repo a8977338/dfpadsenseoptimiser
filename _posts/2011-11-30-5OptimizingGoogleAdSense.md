@@ -67,7 +67,7 @@ With a little more effort you can also test different positions for your AdSense
 {% include gwo-adsense-position-2-code.html %}
 {% endhighlight %}
 
-The above code defines two ad positions (_top_ and _bottom_) which will only be filled when a variable (_ad_positions['top']_ or _ad_positions['bottom']_) is set. These variables are set in the first section which again is a Google Website Optimizer section.
+The above code defines two ad positions (_top_ and _bottom_) which will only be filled when a variable (_ad_positions_) is set. These variables are set in the first section which again is a Google Website Optimizer section.
 
 This section can then be replaced by a variation like the following.
 
