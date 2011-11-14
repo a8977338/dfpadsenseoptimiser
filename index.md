@@ -38,7 +38,3 @@ Only the following Google tools are used. All principles described comply with G
 [![Google Website Optimizer](/img/google-website-optimizer-logo.gif "Google Website Optimizer logo")](http://www.google.com/websiteoptimizer "Google Website Optimizer homepage") 
 
 [![DoubleClick For Publishers](/img/doubleclick-for-publishers-logo.png "DoubleClick For Publishers logo")](http://www.google.com/dfp "DoubleClick For Publishers homepage")
-
----
-
-> _Disclaimer ..._
