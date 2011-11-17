@@ -48,17 +48,18 @@
       sections.push(section+"("+utmx('variation_number', section)+")");
   }
   value += sections.join(", ")+" }";
+  document.write(value);
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', '{{ site.google_analytics_id }}']);
-  _gaq.push(['_setCustomVar', 1, 'gwo_experiment_1', values, 1]);
+  _gaq.push(['_setAccount', 'UA-27081588-1']);
+  _gaq.push(['_setCustomVar', 1, 'demo_2', value, 1]);
   _gaq.push(['_trackPageview']);
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-  document.write(value);
   </script>
   <!-- End of Analytics Alternative Script -->
 
