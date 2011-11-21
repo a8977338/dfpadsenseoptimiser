@@ -15,23 +15,20 @@ function extract()
   $('input#ana_id').val(aid);
 }
 
-function generate()
+function validationpage()
 {
   extract();
-  
-  var snippets = $('#snippets');
-  snippets.empty();
-  $('input.sections').each(function(i,e){
-    var snippetname = $(e).val();
-    var snippet = '<h6>'+snippetname+'</h6><textarea rows="2" class="copy xlarge"><script>utmx_section("'+snippetname+'")<\/script>\n<\/noscript>\n<\/textarea>';
-    snippets.append(snippet);
-  });
 
   var eid = $('input#exp_id').val();
   var aid = $('input#ana_id').val();
   var sec = $('input.sections').map(function(i,e){return $(e).attr('name')+'='+$(e).val();}).get().join('&');
   var url = (eid && aid) ? '/verification.php?exp_id='+eid+'&ana_id='+aid+'&'+sec : '#';
-  $('#verification_page').attr('href', url);
+  window.location.href = url;
+}
+
+function generate()
+{
+  extract();
 
   $('#control_script').val(
     $('#controltrackingcodetemp').val()
@@ -39,7 +36,13 @@ function generate()
       .replace(/%GA_CUSVAR_IDX%/g, $('#cusvar_idx').val())
   );
 
-  return false;
+  var snippets = $('#snippets');
+  snippets.empty();
+  $('input.sections').each(function(i,e){
+    var snippetname = $(e).val();
+    var snippet = '<h6>'+snippetname+'</h6><textarea rows="2" class="copy xlarge"><script>utmx_section("'+snippetname+'")<\/script>\n<\/noscript>\n<\/textarea>';
+    snippets.append(snippet);
+  });
 }
 
 function add_section(element)

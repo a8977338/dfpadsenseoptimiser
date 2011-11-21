@@ -17,7 +17,7 @@ layout: false
         {% include page_header.html %}
         <div class="row">
           <div class="span8">
-            <form action="/verification.php" onsubmit="return generate();">
+            <form action="/verification.php" onsubmit="return false;">
               <input type="hidden" name="exp_id" id="exp_id">
               <input type="hidden" name="ana_id" id="ana_id">
               <fieldset>
@@ -53,8 +53,8 @@ layout: false
                   </div>
                 </div>
                 <div class="actions">
-                  <input type="submit" value="Generate codes" class="btn primary">
-                  <a id="verification_page" href="#" class="btn">Verification Page</a>
+                  <a id="verification_page" href="javascript:validationpage()" class="btn primary">1. Verification Page</a>
+                  <a id="generate_codes" href="javascript:generate()" class="btn primary">2. Generate Codes</a>
                 </div>
               </fieldset>
             </form>
