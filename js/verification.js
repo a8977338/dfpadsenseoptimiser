@@ -29,7 +29,8 @@ function generate()
 
   var eid = $('input#exp_id').val();
   var aid = $('input#ana_id').val();
-  var url = (eid && aid) ? '/verification.php?exp_id='+eid+'&ana_id='+aid : '#';
+  var sec = $('input.sections').map(function(i,e){return $(e).attr('name')+'='+$(e).val();}).get().join('&');
+  var url = (eid && aid) ? '/verification.php?exp_id='+eid+'&ana_id='+aid+'&'+sec : '#';
   $('#verification_page').attr('href', url);
 
   $('#control_script').val(
