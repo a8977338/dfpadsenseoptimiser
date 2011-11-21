@@ -1,0 +1,104 @@
+---
+layout: false
+---
+<!DOCTYPE html>
+<html lang="en">
+{% include header.html %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="/js/verification.js"></script>
+
+  <body>
+
+    {% include topnav.html %}
+
+    <div class="container">
+
+      <div class="content">
+        {% include page_header.html %}
+        <div class="row">
+          <div class="span8">
+            <form action="/verification.php" onsubmit="return generate();">
+              <input type="hidden" name="exp_id" id="exp_id">
+              <input type="hidden" name="ana_id" id="ana_id">
+              <fieldset>
+                <legend>GWO Validation Generator</legend>
+                <div class="clearfix">
+                  <label for="controlandtrackingscript">Control and Tracking Script</label>
+                  <div class="input">
+                    <textarea rows="5" name="controlandtrackingscript" id="controlandtrackingscript" class="xlarge"></textarea>
+                    <span class="help-block">
+                      Copy and paste the Control and Tracking Script code.
+                    </span>
+                  </div>
+                </div>
+                <div class="clearfix">
+                  <label for="analytics">Google Analytics Custom Variable Index</label>
+                  <div class="input">
+                    <input type="text" size="3" name="cusvar_idx" id="cusvar_idx" class="small" value="5">
+                    <span class="help-block">
+                      Assign any value from 1 to 5. Please make sure this doesn't clash with other variables set on the site in question.
+                    </span>
+                  </div>
+                </div>
+                <div class="clearfix">
+                  <label for="sections">Sections</label>
+                  <div class="input">
+                    <input type="text" size="30" name="sections[]" id="sections" class="sections xlarge">
+                    <button class="btn danger" onclick="return remove_section(this)" style="display:none">del</button>
+                  </div>
+                </div>
+                <div class="clearfix">
+                  <div class="input">
+                    <button class="btn success" onclick="return add_section(this)">add section</button>
+                  </div>
+                </div>
+                <div class="actions">
+                  <input type="submit" value="Generate codes" class="btn primary">
+                  <a id="verification_page" href="#" class="btn">Verification Page</a>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+          <div class="span6" style="background:#DDF4FB">
+            <h3>Copy and Paste these Scripts</h3>
+            <h5>Control and Tracking Script</h5>
+            <textarea rows="6" id="control_script" class="copy xlarge"></textarea>
+            <hr />
+            <h5>Sections</h5>
+            <div id="snippets"></div>
+          </div>
+        </div>
+      </div>
+
+      {% include footer.html %}
+
+    </div> <!-- /container -->
+      <textarea id="controltrackingcodetemp">
+  <!-- Google Website Optimizer Control Script -->
+  <script>
+  function utmx_section(){}function utmx(){}
+  (function(){var k='%GWO_EXP_ID%',d=document,l=d.location,c=d.cookie;function f(n){
+  if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.indexOf(';',i);return escape(c.substring(i+n.
+  length+1,j<0?c.length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;
+  d.write('<sc'+'ript src="'+
+  'http'+(l.protocol=='https:'?'s://ssl':'://www')+'.google-analytics.com'
+  +'/siteopt.js?v=1&utmxkey='+k+'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='
+  +new Date().valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
+  '" type="text/javascript" charset="utf-8"></sc'+'ript>')})();
+  </script>
+  <!-- End of Google Website Optimizer Control Script -->
+  <!-- Alternative Google Website Optimizer Tracking Script -->
+  <script type="text/javascript">
+  // track a custom variable like "combo_2:small(1),large(0)"
+  if (typeof(utmx) == "function" && typeof(utmx_global_vd) == "object") {
+    var _gaq = _gaq || [], _ss = [], _cw = "combo_" + utmx("combination") + ":";
+    for (_s in utmx_global_vd) { _ss.push( _s + "(" + utmx("variation_number", _s) + ")" ); }
+    _cw += _ss.join(",");
+    _gaq.push(['_setCustomVar', %GA_CUSVAR_IDX%, 'exp_%GWO_EXP_ID%', _cw, 1]);
+  }
+  </script>
+  <!-- End of Google Website Optimizer Tracking Script -->
+    </textarea>
+  </body>
+</html>
+
