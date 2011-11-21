@@ -1,3 +1,17 @@
+<div class="alert-message block-message info">
+<h3>Setup Objective</h3>
+<p>After completing this setup</p>
+<br />
+<ul>
+  <li>You will have made <strong>no changes to your website</strong>.</li>
+<li>You will have created <strong>1 (stopped) experiment</strong>.</li>
+</ul>
+<br />
+<p>This new experiment will be used as a blueprint for all your real experiments (see <em>Usage</em>).</p>
+<br />
+<p>It is recommended to create one blueprint experiment for each <em>kind of experiment</em> you want to conduct (i.e. color variations , rounded corner variations, font variations, ..).</p>
+</div>
+
 ### 1. Create Missing Accounts
 
 Make sure you enabled the following tools for your Google account.
@@ -108,11 +122,13 @@ A common color variation could look like this.
 
 ![step 15 - create variations 2](/img/scenarios/gwo-new-experiment-step-13-create-variations-2.png)
 
-###### 4.16 Launch and Stop your Experiment
+###### 4.16 Launch your Experiment
 
 ![step 16 - launch experiment](/img/scenarios/gwo-new-experiment-step-14-launch.png)
 
 ![step 16 - started experiment](/img/scenarios/gwo-new-experiment-step-15-started-experiment.png)
+
+###### 4.16 Stop your Experiment
 
 Next click on **Stop**, **Continue** and **Save Changes** to stop this experiment again.
 
