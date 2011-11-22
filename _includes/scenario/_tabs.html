@@ -1,11 +1,13 @@
 <ul class="tabs" data-tabs="setup-tabs">
-<li><a href="#setup">Setup</a></li>
-<li class="active"><a href="#usage">Usage</a></li>
-<li><a href="#analyse">Analysis</a></li>
+  <li class="active"><a href="#recommendations">Recommendations</a></li>
+  <li><a href="#setup">Setup</a></li>
+  <li><a href="#usage">Usage</a></li>
+  <li><a href="#analyse">Analysis</a></li>
 </ul>
 
 <div id="setup-tabs" class="tab-content">
+  <div id="recommendations" class="tab-pane active">{{ recommendations | markdownify }}</div>
   <div id="setup" class="tab-pane">{{ setup | markdownify }}</div>
-  <div id="usage" class="tab-pane active">{{ usage | markdownify }}</div>
+  <div id="usage" class="tab-pane">{{ usage | markdownify }}</div>
   <div id="analyse" class="tab-pane">{{ analyse | markdownify }}</div>
 </div>

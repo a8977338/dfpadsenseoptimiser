@@ -8,6 +8,7 @@ abstract: "This chapter provides a detailed but not at all technical step by ste
 
 {{ page.abstract }}
 
+{% capture recommendations %}{% include scenario/scenario-1-recommendations.md %}{% endcapture %}
 {% capture setup %}{% include scenario/scenario-1-setup.md %}{% endcapture %}
 {% capture usage %}{% include scenario/scenario-1-usage.md %}{% endcapture %}
 {% capture analyse %}{% include scenario/scenario-1-analyse.md %}{% endcapture %}
