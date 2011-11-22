@@ -134,6 +134,6 @@ Next click on **Stop**, **Continue** and **Save Changes** to stop this experimen
 
 ![step 16 - stopped experiment](/img/scenarios/gwo-new-experiment-step-16-stopped-experiment.png)
 
-<div class="alert-message info">
+<div class="alert-message block-message info">
   <p style="text-align:center"><strong>The setup for your first experiment is now completed. You can carry on with the Usage tab.</strong></p>
 </div>
