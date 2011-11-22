@@ -68,3 +68,8 @@
       }
 
       .scenario img {border:2px solid #EEEEEE;}
+      
+      .nav .active > a {
+        border-bottom: 2px solid #FFFFFF;
+        margin-bottom: -2px;
+      }
