@@ -32,8 +32,8 @@ function generate()
 
   $('#control_script').val(
     $('#controltrackingcodetemp').val()
-      .replace(/%GWO_EXP_ID%/g, $('#exp_id').val())
-      .replace(/%GA_CUSVAR_IDX%/g, $('#cusvar_idx').val())
+      .replace(/{{ gwo_exp_id }}/g, $('#exp_id').val())
+      .replace(/{{ ga_cusvar_idx }}/g, $('#cusvar_idx').val())
   );
 
   var snippets = $('#snippets');
