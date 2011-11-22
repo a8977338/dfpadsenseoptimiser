@@ -1,5 +1,5 @@
 <div class="alert-message block-message info">
-<h3>Setup Objective</h3>
+<h3>Setup</h3>
 <p>After completing this setup</p>
 <br />
 <ul>
