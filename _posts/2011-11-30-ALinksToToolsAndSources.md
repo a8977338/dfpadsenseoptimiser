@@ -28,4 +28,7 @@ submenu:
 * Blog: [Analytics Talk](http://cutroni.com/blog/ "Analytics Talk - Untangling the world of web analytics"), Untangling the world of web analytics
 * Blog: [ROI Revolution](http://www.roirevolution.com/blog/ "ROI Revolution - Blog of a Data-Driven Online Marketing Agency"), Blog of a Data-Driven Online Marketing Agency
 * Blog: [Analytics Market](http://www.analyticsmarket.com/blog?redirect=no "Analytics Market - Is a one-stop resource for anything you can do with Google Analytics. Tips and tricks, product news, API tools, and more!"), Is a one-stop resource for anything you can do with Google Analytics. Tips and tricks, product news, API tools, and more!
-* Blog: [Think Vitamin - Advanced Google Analytics for Startups](http://thinkvitamin.com/business/analytics/google-analytics-tweaks/ "ROI Revolution - Blog of a Data-Driven Online Marketing Agency"), Think Vitamin post about Custom Variables and Advanced Segments
+* Blog: [Think Vitamin - Advanced Google Analytics for Startups](http://thinkvitamin.com/business/analytics/google-analytics-tweaks/ "Think Vitamin - Advanced Google Analytics for Startups"), Think Vitamin post about Custom Variables and Advanced Segments
+* Blog: [SEO HIMANSHU](http://seohimanshu.com/ "SEO HIMANSHU - SEO, PPC & Analytics Service Provider"), Think Vitamin post about Custom Variables and Advanced Segments
+* Blog: [morevisibility](http://www.morevisibility.com/blogs.php "morevisibility - Leaders in Search, Design and Interactive Marketing"), Our Analytics , SEO, Social Media & SEM Blogs provide a less formalized platform to share our insights than our White Papers, and are posted much more frequently.
+
