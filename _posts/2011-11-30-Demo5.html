@@ -1,0 +1,54 @@
+---
+layout: false
+title: "5. Default DFP Integration 4"
+abstract: "Simple page with three AdSense adverts served from DFP."
+permalink: "/demo/5-default-dfp-integration.html"
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>{{ page.title }} &middot; Optimizing AdSense</title>
+  <meta name="description" content="{{ page.abstract }}" />
+  <meta name="author" content="Christian Schaefer caefer@ical.ly" />
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <link href="/css/all.css" rel="stylesheet">
+
+  <script type='text/javascript'>
+  (function() {
+  var useSSL = 'https:' == document.location.protocol;
+  var src = (useSSL ? 'https:' : 'http:') +
+  '//www.googletagservices.com/tag/js/gpt.js';
+  document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+  '//www.googletagservices.com/tag/js/gpt.js';
+  })();
+  </script>
+
+  <script type='text/javascript'>
+  googletag.defineSlot('/5947190/test_halfbanner_2_on_demo5', [234, 60], 'div-gpt-ad-1322062903460-0').addService(googletag.pubads());
+  googletag.pubads().enableSyncRendering();
+  googletag.pubads().enableSingleRequest();
+  googletag.enableServices();
+  </script>
+  {% include google-analytics-code.html %}
+</head>
+<body>
+  <h1>{{ page.title }}</h1>
+  <p>{{ page.abstract }}</p>
+
+  <fieldset><legend>half banner</legend>
+
+    <!-- test_halfbanner_2_on_demo5 -->
+    <div id='div-gpt-ad-1322062903460-0' style='width:234px; height:60px;'>
+    <script type='text/javascript'>
+    googletag.display('div-gpt-ad-1322062903460-0');
+    </script>
+    </div>
+
+  </fieldset>
+</body>
+</html>
