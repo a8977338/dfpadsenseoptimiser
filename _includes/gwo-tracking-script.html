@@ -1,11 +1,26 @@
 <!-- Alternative Google Website Optimizer Tracking Script -->
 <script type="text/javascript">
-// track a custom variable like "combo_2:small(1),large(0)"
-if (typeof(utmx) == "function" && typeof(utmx_global_vd) == "object") {
-  var _gaq = _gaq || [], _ss = [], _cw = "combo_" + utmx("combination") + ":";
-  for (_s in utmx_global_vd) { _ss.push( utmx("variation_number", _s) ); }
-  _cw += _ss.join(",");
-  _gaq.push(['_setCustomVar', {{ ga_cusvar_idx }}, 'exp_{{ gwo_exp_id }}', _cw.substr(0,46), 3]);
-}
+var _gaq = _gaq || [];
+(function(_gaq){
+  var ga  = '{{ site.google_analytics_id }}',
+      gwo = '{{ site.gwo_experiment_id }}',
+      e   = 'www.optimization-adsense.eu';
+  (function(fn) {
+    var d = document;
+    if(d.addEventListener) d.addEventListener('DOMContentLoaded', function(){ d.removeEventListener('DOMContentLoaded', arguments.callee, false); fn(); }, false);
+    else if(d.attachEvent) d.attachEvent('onreadystatechange', function(){ if(d.readyState === "complete"){ d.detachEvent('onreadystatechange', arguments.callee); fn(); }});
+  })(function(){
+    if (typeof(utmx) == "function" && typeof(utmx_global_vd) == "object") {
+      var c = (function(s,l){while(s.length<l) s='0'+s; return s;})(utmx('combination').toString(), 4);
+      var v = []; for (s in utmx_global_vd) { v.push( utmx("variation_number", s) ); }
+      var v = v.join(','), n = e+' '+gwo+'#'+c+' '+location.pathname.replace(/[^\/]+$/, '');
+      if(!(window._gaq instanceof Array)){
+        try{ _gat._getTracker(ga)._trackSocial(n, v); } catch(err) { }
+      }else{
+        _gaq.push(['_trackSocial', n, v]);
+      }
+    }
+  });
+})(_gaq);
 </script>
 <!-- End of Google Website Optimizer Tracking Script -->
