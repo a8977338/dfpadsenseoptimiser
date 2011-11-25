@@ -1,0 +1,27 @@
+<script type="text/javascript">
+var _gaq = _gaq || [];
+(function(_gaq){
+  var ga  = '{{ site.google_analytics_id }}',
+      gwo = '{{ site.gwo_experiment_id }}',
+      e   = 'AdsenseOptimization';
+  (function(fn) {
+    var d = document;
+    if(d.addEventListener) d.addEventListener('DOMContentLoaded', function(){ d.removeEventListener('DOMContentLoaded', arguments.callee, false); fn(); }, false);
+    else if(d.attachEvent) d.attachEvent('onreadystatechange', function(){ if(d.readyState === "complete"){ d.detachEvent('onreadystatechange', arguments.callee); fn(); }});
+  })(function(){
+    if (typeof(utmx) == "function" && typeof(utmx_global_vd) == "object") {
+      var c = (function(s,l){while(s.length<l) s='0'+s; return s;})(utmx('combination').toString(), 4);
+      var v = []; for (s in utmx_global_vd) { v.push( utmx("variation_number", s) ); }
+      var v = v.join(','), n = e+' '+gwo+'#'+c+' '+location.pathname.replace(/[^\/]+$/, '');
+      if(!(window._gaq instanceof Array)){
+        try{
+          var t = _gat._getTracker(ga);
+          t._trackSocial(n, v);
+        } catch(err) { }
+      }else{
+        _gaq.push(['_trackSocial', n, v]);
+      }
+    }
+  });
+})(_gaq);
+</script>

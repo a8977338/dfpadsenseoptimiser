@@ -1,0 +1,46 @@
+---
+permalink: "/mit/pfad/angabe/test-4.html"
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Testing Analytics &middot; Optimizing AdSense</title>
+  <meta name="author" content="Christian Schaefer caefer@ical.ly" />
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <link href="/css/all.css" rel="stylesheet">
+
+</head>
+<body>
+  <h1>Testing Analytics #4</h1>
+  <dl>
+    <dt>method</dt>
+    <dd>traditional</dd>
+    <dt>position</dt>
+    <dd>bottom</dd>
+    <dt>order</dt>
+    <dd>control last</dd>
+  </dl>
+
+  {% include tests/gwo-tracking.html %}
+  {% include tests/gwo-control.html %}
+
+  {% include tests/ga-traditional.html %}
+  <script type="text/javascript"><!--
+  google_ad_client = "ca-pub-5296440426067087";
+  /* test_small_square */
+  google_ad_slot = "3016468276";
+  google_ad_width = 200;
+  google_ad_height = 200;
+  //-->
+  </script>
+  <script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+  </script>
+  {% include tests/auto-wipe.html %}
+  {% include tests/auto-forward.html %}
+</body>
+</html>

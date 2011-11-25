@@ -1,0 +1,11 @@
+<script type="text/javascript">
+if (-1 < document.location.search.indexOf('auto=true')) {
+  window.setTimeout(function(){
+    var l = document.location;
+    var current = l.href.match(/-(\d)/)[1];
+    var next = ((parseInt(l.href.match(/-(\d)/)[1])%8)+1).toString();
+    var re = new RegExp('test-'+current+'\.html');
+    l.replace(l.href.replace(re, 'test-'+next+'\.html'));
+  }, 2500);
+}
+</script>
