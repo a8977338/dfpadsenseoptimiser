@@ -12,7 +12,7 @@ var _gaq = _gaq || [];
     if (typeof(utmx) == "function" && typeof(utmx_global_vd) == "object") {
       var c = (function(s,l){while(s.length<l) s='0'+s; return s;})(utmx('combination').toString(), 4);
       var v = []; for (s in utmx_global_vd) { v.push( utmx("variation_number", s) ); }
-      var v = v.join(','), n = e+' '+gwo+'#'+c+' '+location.pathname.replace(/[^\/]+$/, '');
+      var n = e+' '+gwo+'#'+c+' '+v.join(','), v = location.pathname.replace(/[^\/]+$/, '');
       if(!(window._gaq instanceof Array)){
         try{
           var t = _gat._getTracker(ga);
