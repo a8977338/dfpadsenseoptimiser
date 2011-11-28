@@ -1,3 +1,5 @@
+**Technical skill required:** <span class="label">none</span>
+
 <div class="alert-message block-message info">
 <h3>Recommendations</h3>
 <p>In a default AdSense account you can change only two attribute families.</p>
