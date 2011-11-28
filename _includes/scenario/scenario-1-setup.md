@@ -1,3 +1,5 @@
+**Technical skill required:** <span class="label">copy&paste will do</span>
+
 <div class="alert-message block-message info">
 <h3>Setup</h3>
 <p>After completing this setup</p>
@@ -24,116 +26,90 @@ Make sure you enabled the following tools for your Google account.
 
 Make sure your AdSense and Analytics accounts are connected. If you're not sure how to do that please follow [this google support document](http://www.google.com/adsense/support/as/bin/answer.py?answer=92625&topic=1385757).
 
-### 3. Ensure Availability of Custom Vars
+If you plan to run experiments on more than one website please make sure that all of the have an Analytics pixel implemented and that their AdSense account is connected accordingly.
 
-Conversion tracking will be done using so called *Custom Variables* in Google Analytics. There are five so called indexes that can be used to store such variables.
+### 3. Create Base Experiment
 
-Because of different persisting behaviour it is important to make sure that your variables don't clash with others. Please contact the webmaster of your website to find out if custom variables are already used and what index is available for you.
-
-If custom variables are not yet used on the website you can choose any index from 1 to 5.
-
-### 4. Create Base Experiment
-
-###### 4.1 Login into Google Website Optimizer and Create a New Experiment
+In your **Experiments** tab click on *Create another experiment*.
 
 ![step 1 - create](/img/scenarios/gwo-new-experiment-step-1-create.png)
 
-###### 4.2 Create a Multivariate Experiment
+Choose to create a *Multivariate Experiment*.
 
 ![step 2 - multivariate](/img/scenarios/gwo-new-experiment-step-2-multivariate.png)
 
-###### 4.3 Tick the Box and Create the Experiment
+Ignore the next page: just *tick the checkbox and continue*.
 
 ![step 3 - complete](/img/scenarios/gwo-new-experiment-step-3-complete.png)
 
-###### 4.4 Enter the Page you want to run your Experiment on
+On the next page you need to define *a descriptive name* for your experiment and provide two existing but otherwise unimportant URLs.
 
-![step 4 - identify test page](/img/scenarios/gwo-new-experiment-step-4-identify-test-page.png)
+![step 4 - identify test page](/img/scenarios/gwo-new-experiment-step-4-setup.png)
 
-###### 4.5 Enter the same URL as Conversion Page
+Confirm that *You will install and validate the JavaScript tags*.
 
-![step 5 - identify conversion page](/img/scenarios/gwo-new-experiment-step-5-identify-conversion-page.png)
+![step 5 - identify conversion page](/img/scenarios/gwo-new-experiment-step-6-you-will-do-it.png)
 
-###### 4.6 Confirm that you will care about the implementation yourself
+### 4. Validation
 
-![step 6 - identify conversion page](/img/scenarios/gwo-new-experiment-step-6-you-will-do-it.png)
+Google Website Optimizer requires you to validate your implementation. As for optimizing AdSense the default Website Optimizer code is not suitable you need to forge the validation process.
 
-###### 4.7 Select and Copy the Control and Tracking Script Code
+On the page *Step 2: Install and validate JavaScript tags* find the *Control and Tracking Script* and copy it to your clipboard.
 
-![step 7 - identify conversion page](/img/scenarios/gwo-new-experiment-step-7-control-and-tracking-script.png)
+![step 6 - identify conversion page](/img/scenarios/gwo-new-experiment-step-7-control-and-tracking-script.png)
 
-###### 4.8 Paste the Copied Code to the Validation Generator
+Then open a new browser window and go to the [Optimizing AdSense Code Generator](/code-generator.html "Optimizing AdSense Code Generator") and paste the code into the textbox.
 
-Go to [GWO Validation Generator](/verification.html "GWO Validation Generator").
+![step 7 - open code generator](/img/scenarios/optad-code-generator-1-dialog.png)
 
-![step 8 - open validation generator](/img/scenarios/gwo-validation-generator-1-dialog.png)
+> You can also rename, add or remove the sections. The default values are based on the recommendations chapter of this scenario.
 
-###### 4.9 Paste the Copied Code into the Textbox "Control and Tracking Script"
+Now **click on *1. Validation Page*** to download a generated webpage to pass validation. Save this document somewhere on your computer.
 
-![step 9 - paste control and tracking script](/img/scenarios/gwo-validation-generator-2-paste-code.png)
+![step 8 - download validation page](/img/scenarios/gwo-validation-generator-6-download-validation-page.png)
 
-###### 4.10 Enter Custom Variable Index
+Leave that browser window open but go back to Google Website Optimizer to continue with the validation.
 
-Choose any number from 1 to 5 as defined in **3.**.
+Choose **offline validation**.
 
-![step 10 - enter custom variable index](/img/scenarios/gwo-validation-generator-3-enter-custom-variable-index.png)
+![step 9 - validation](/img/scenarios/gwo-new-experiment-step-8-validation-0.png)
 
-###### 4.11 Add your Sections
+Browse and select the validation page you just downloaded for *both the Test Page and the Conversion Page*.
 
-Add as many sections as you want to include in your experiment.
+![step 10 - validation](/img/scenarios/gwo-new-experiment-step-9-validation-1.png)
 
-![step 11 - add actions](/img/scenarios/gwo-validation-generator-4-add-sections.png)
+Click on *Continue* to validate the page you downloaded.
 
-###### 4.12 Generate Validation Page
-
-Add as many sections as you want to include in your experiment.
-
-![step 12 - click on validation page](/img/scenarios/gwo-validation-generator-5-click-on-validation-page.png)
-
-###### 4.13 Save Validation Page
-
-![step 13 - download validation page](/img/scenarios/gwo-validation-generator-6-download-validation-page.png)
-
-###### 4.14 Offline Validation
-
-Go back now to your GWO experiment but leave the generator page open. Choose offline validation.
-
-![step 14 - validation](/img/scenarios/gwo-new-experiment-step-8-validation-0.png)
-
-Browse and select the validation page you just downloaded for both the Test Page and the Conversion Page.
-
-![step 15 - validation](/img/scenarios/gwo-new-experiment-step-9-validation-1.png)
-
-Validation should look like this now.
-
-![step 16 - validation](/img/scenarios/gwo-new-experiment-step-10-validation-2.png)
+![step 11 - validation](/img/scenarios/gwo-new-experiment-step-10-validation-2.png)
 
 Continue to the next step.
 
-![step 17 - validation](/img/scenarios/gwo-new-experiment-step-11-validation-3.png)
+![step 12 - validation](/img/scenarios/gwo-new-experiment-step-11-validation-3.png)
 
-###### 4.15 Create Variations
+### 5. Create Variations
 
 With the next dialog you can create variations for each section you specified.
 
-![step 15 - create variations 1](/img/scenarios/gwo-new-experiment-step-12-create-variations-1.png)
-
 A common color variation could look like this.
 
-![step 15 - create variations 2](/img/scenarios/gwo-new-experiment-step-13-create-variations-2.png)
+![step 14 - create variations 2](/img/scenarios/gwo-new-experiment-step-13-create-variations.png)
 
-###### 4.16 Launch your Experiment
+> Make sure that you create *the same variations for each color section and also the same variations for each corner section*.
 
-![step 16 - launch experiment](/img/scenarios/gwo-new-experiment-step-14-launch.png)
+> You can edit, add and remove variations later as well but it is recommended to define all desired variations in the *Blueprint Experiment*.
+
+### 6. Launch your Experiment
+
+![step 15 - launch experiment](/img/scenarios/gwo-new-experiment-step-14-launch.png)
 
 ![step 16 - started experiment](/img/scenarios/gwo-new-experiment-step-15-started-experiment.png)
 
-###### 4.16 Stop your Experiment
+### 7. Stop your Experiment
 
 Next click on **Stop**, **Continue** and **Save Changes** to stop this experiment again.
 
-![step 16 - stopped experiment](/img/scenarios/gwo-new-experiment-step-16-stopped-experiment.png)
+![step 17 - stopped experiment](/img/scenarios/gwo-new-experiment-step-16-stopped-experiment.png)
 
 <div class="alert-message block-message info">
-  <p style="text-align:center"><strong>The setup for your first experiment is now completed. You can carry on with the Usage tab.</strong></p>
+  <p style="text-align:center"><strong>The setup for your blueprint experiment is now completed. You can carry on with the Usage tab.</strong></p>
 </div>
