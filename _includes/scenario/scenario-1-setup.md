@@ -1,4 +1,4 @@
-**Technical skill required:** <span class="label">copy&paste will do</span>
+**Duration:** <span class="label notice">30-60 min</span>, **Technical skill required:** <span class="label notice">copy&paste will do</span>
 
 <div class="alert-message block-message info">
 <h3>Setup</h3>
@@ -56,7 +56,7 @@ Google Website Optimizer requires you to validate your implementation. As for op
 
 On the page *Step 2: Install and validate JavaScript tags* find the *Control and Tracking Script* and copy it to your clipboard.
 
-![step 6 - identify conversion page](/img/scenarios/gwo-new-experiment-step-7-control-and-tracking-script.png)
+![step 6 - copy control and tracking code](/img/scenarios/gwo-new-experiment-step-7-control-and-tracking-script.png)
 
 Then open a new browser window and go to the [Optimizing AdSense Code Generator](/code-generator.html "Optimizing AdSense Code Generator") and paste the code into the textbox.
 

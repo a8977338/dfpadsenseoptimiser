@@ -1,3 +1,5 @@
+**Duration:** <span class="label notice">15-30 min</span>, **Technical skill required:** <span class="label notice">copy&paste will do</span>
+
 <div class="alert-message block-message info">
 <h3>Analyse</h3>
 <p>This chapter assumes that you have completed the <em>Setup</em> first as it copies an existing experiment rather than creating one.</p>
@@ -5,65 +7,55 @@
 <p>After following this chapter you will have successfully installed an AdSense experiment on a website. You can repeat this chapter for as many pages/sites as you require.</p>
 </div>
 
-### 1. Create Segment
+### 1. Use Latest Google Analytics Interface
 
-Login to your Google Analytics account and create a new segment.
+Make sure you use the latest Google Analytics web interface. If in the top bar next to your account name and email address you see a *New Version* link - click it.
 
-![step 1 - create segment](/img/scenarios/ga-analyse-1-create-segment.png)
+### 2. View Experiment Data
 
-Filter for **Custom Variable (Key 5)** (assuming your Custom Variable Index was 5) containing the string "exp_XXXXXXXX".
+The experiment data is stored using the so called Social Interaction Analytics feature and appear under *Visitor / Social / Engagement*.
 
-![step 1 - create experiment segment](/img/scenarios/ga-analyse-2-create-experiment-segment.png)
+![step 1 - browse visitor social engagement](/img/scenarios/ga-visitor-social-engagement.png)
 
-You can browse to *Visitor / Custom Variables* first to get the appropriate variable name for your experiment in this example it's "exp_0443911789".
+Set the Explorer to the *AdSense* view.
 
-![step 1 - look up variable name](/img/scenarios/ga-analyse-3-look-up-experiment.png)
+![step 2 - adsense view](/img/scenarios/ga-explorer-adsense.png)
 
-### 2. Use Segment
+Browse to *Socially Engaged* and sort by *AdSense CTR* to get the experiment combination with the best *click through rate* on top.
 
-If this new segment is not yet active after saving it you have to select it from the *ADVANCED SEGMENTS* menu.
+![step 3 - sort by ctr](/img/scenarios/ga-adsense-per-experiment-combination-and-path.png)
 
-![step 2 - use segment](/img/scenarios/ga-analyse-4-use-segment.png)
+> You might need to apply a filter if other social activities are tracked as well.
 
-### 3. Browse AdSense Pages
+### 3. Pick Combination
 
-Browse to *Content / AdSense / AdSense Pages* to see your AdSense figures for the pages your experiment runs on.
+In the above screenshot you can see values for *Social Source and Action* that include the following information.
 
-![step 3 - browse adsense pages](/img/scenarios/ga-analyse-5-browse-adsense-pages.png)
-
-### 4. Analyse!
-
-Before you can draw any conclusions you have to add **Custom Variable (Value 05)** (assuming your Custom Variable Index was 5) as a *Secondary dimension* like in this screenshot.
-
-![step 4 - analyse](/img/scenarios/ga-analyse-6-analyse.png)
-
-Now you can order by **AdSense CTR** and pick the combination with the best value.
-
-### 5. Pick Combination
-
-As you see in the above screenshot the combinations are represented with strings like `combo_XX:x,y,z` where `XX` is the number of the combination, `y` the variation number for the first section, `x` the variation number for the second section and `z` the variation number for the third section and so on if you defined more than three sections.
+* *name* (i.e. `www.optimizing-adsense.eu`), identifying this project. use this value for your filter if necessary.
+* *experiment id* (i.e. `0443911789`), the id of your experiment.
+* *combination id* (i.e. `#0004`), representing the combination that was used for this particular case.
+* *variation sequence* (i.e. `1,2,0`), tells you which variations were used per section where `0` represents the original (unchanged) variation.
 
 You can now login to your Google Website Optimizer again open the appropriate experiment and pick the appropriate variations.
 
-![step 5 - pick variations](/img/scenarios/gwo-analyse-1-pick-variations.png)
+If the best performing *variation sequence* would be i.e. `1,2,0,1` you would pick the following variations.
 
-If the best performing combination would be i.e. `combo_19:1,0,2` you would pick the following variations.
+* **optad_1_col** => *color variation #1*
+* **optad_1_crn** => *corner variation #2*
+* **optad_2_col** => *original*
+* **optad_2_crn** => *corner variation #1*
 
-* **adsense_color_one** => *col1*
-* **adsense_color_two** => *Original*
-* **adsense_color_three** => *col2*
-
-### 6. Apply Best Performing Variations
+### 4. Apply Best Performing Variations
 
 You can now apply these variation in one of two ways.
 
-#### 6.1 Change Ad Unit Style in AdSense
+#### 4.1 Change Ad Unit Style in AdSense
 
 Login to your AdSense account and change the style of the appropriate ad unit.
 
 ![step 6 - style ad unit](/img/scenarios/adsense-analyse-1-style.png)
 
-#### 6.2 Write Variation before Ad Unit Code
+#### 4.2 Write Variation before Ad Unit Code
 
 Go to your websites code again and change this:
 
@@ -106,7 +98,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
 {% endhighlight %}
 
-### 7. End Experiment
+### 5. End Experiment
 
 To end this experiment you have to remove the *Control and Tracking Code* from your website.
 

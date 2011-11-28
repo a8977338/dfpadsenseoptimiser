@@ -1,4 +1,4 @@
-**Technical skill required:** <span class="label">none</span>
+**Duration:** <span class="label notice">0-5 min</span>, **Technical skill required:** <span class="label notice">none</span>
 
 <div class="alert-message block-message info">
 <h3>Recommendations</h3>
