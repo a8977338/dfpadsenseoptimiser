@@ -89,6 +89,8 @@ layout: false
             <hr />
             <h5>Sections</h5>
             <div id="snippets"></div>
+            <br />
+            <br />
           </div>
         </div>
       </div>
@@ -97,8 +99,8 @@ layout: false
 
     </div> <!-- /container -->
     {% assign gwo_exp_id = '{{ gwo_exp_id }}' %}
-    {% assign ga_cusvar_idx = '{{ ga_cusvar_idx }}' %}
-    <textarea id="controltrackingcodetemp" style="display:none">
+    {% assign ga_pro_id = '{{ ga_pro_id }}' %}
+    <textarea id="controltrackingcodetemp">
 {% include gwo-control-script.html %}
 {% include gwo-tracking-script.html %}
     </textarea>
