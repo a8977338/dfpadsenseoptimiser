@@ -11,20 +11,20 @@ You probably based your decisions on how well your ads integrate into your websi
 
 Wouldn't it be nice to automatically benchmark different styling options, compare them against each other and then choose the one that performed best in terms of click through rate (CTR)?
 
-That's what I thought so I wrote a book about optimizing AdSense.
-
-<div class="alert-message block-message info">
-<h3>Optimizing AdSense - The Book</h3>
-<p>In this book I wrote down all the learnings and experiences I gathered while experimenting with Google AdSense, Website Optimizer, Analytics and DoubleClick for Publishers (DFP). Being a developer by heart I went into detail quite a lot.</p>
-<div class="alert-actions"><a class="btn" href="/book/">The Book</a></div>
-</div>
-
-For those of you who just want to learn what to do and not how it works I also wrote a couple of scenarios for your setup.
+To get started right away please carry on with a scenarios that best describes your situation.
 
 <div class="alert-message block-message info">
 <h3>Optimizing AdSense - The Scenarios</h3>
 <p>In these scenarios I try to provide as least technical as possible informations about how to setup AdSense optimization, what steps are necessary for your experiments and how to conclude.</p>
 <div class="alert-actions"><a class="btn" href="/scenarios/">The Scenarios</a></div>
+</div>
+
+For more in-depth information about how this optimization works please read the book.
+
+<div class="alert-message block-message info">
+<h3>Optimizing AdSense - The Book</h3>
+<p>In this book I wrote down all the learnings and experiences I gathered while experimenting with Google AdSense, Website Optimizer, Analytics and DoubleClick for Publishers (DFP). Being a developer by heart I went into detail quite a lot.</p>
+<div class="alert-actions"><a class="btn" href="/book/">The Book</a></div>
 </div>
 
 ---
