@@ -1,0 +1,107 @@
+---
+layout: false
+---
+<!DOCTYPE html>
+<html lang="en">
+{% include header.html %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="/js/code-generator.js"></script>
+
+  <body>
+
+    {% include topnav.html %}
+
+    <div class="container">
+
+      <div class="content">
+        {% include page_header.html %}
+        <div class="row">
+          <div class="span8">
+            <form action="/verification.php" onsubmit="return false;">
+              <input type="hidden" name="exp_id" id="exp_id">
+              <input type="hidden" name="ana_id" id="ana_id">
+              <fieldset>
+                <legend>Optimizing AdSense Code Generator</legend>
+                <div class="clearfix">
+                  <label for="gwo_exp_id">GWO Experiment ID</label>
+                  <div class="input">
+                    <input type="text" size="3" name="gwo_exp_id" id="gwo_exp_id" class="small" value="">
+                    <span class="help-block">
+                      Copy the ID from Website Optimizer Control and Tracking Script.
+                    </span>
+                  </div>
+                </div>
+                <div class="clearfix">
+                  <label for="ga_pro_id">GA Profile ID</label>
+                  <div class="input">
+                    <input type="text" size="3" name="ga_pro_id" id="ga_pro_id" class="small" value="">
+                    <span class="help-block">
+                      Provide the Analytics account number.
+                    </span>
+                  </div>
+                </div>
+                <div class="clearfix">
+                  <label for="sections">Sections</label>
+                  <div class="input">
+                    <input type="text" size="30" name="sections[]" id="sections" class="sections large" value="optad_1_col">
+                    <button class="btn danger" onclick="return remove_section(this)">del</button>
+                  </div>
+                  <div class="input">
+                    <input type="text" size="30" name="sections[]" id="sections" class="sections large" value="optad_1_crn">
+                    <button class="btn danger" onclick="return remove_section(this)">del</button>
+                  </div>
+                  <div class="input">
+                    <input type="text" size="30" name="sections[]" id="sections" class="sections large" value="optad_2_col">
+                    <button class="btn danger" onclick="return remove_section(this)">del</button>
+                  </div>
+                  <div class="input">
+                    <input type="text" size="30" name="sections[]" id="sections" class="sections large" value="optad_2_crn">
+                    <button class="btn danger" onclick="return remove_section(this)">del</button>
+                  </div>
+                  <div class="input">
+                    <input type="text" size="30" name="sections[]" id="sections" class="sections large" value="optad_3_col">
+                    <button class="btn danger" onclick="return remove_section(this)">del</button>
+                  </div>
+                  <div class="input">
+                    <input type="text" size="30" name="sections[]" id="sections" class="sections large" value="optad_3_crn">
+                    <button class="btn danger" onclick="return remove_section(this)">del</button>
+                  </div>
+                </div>
+                <div class="clearfix">
+                  <div class="input">
+                    <span class="help-block">
+                      You may rename, add or remove sections as you like. The default values are recommended settings.
+                    </span>
+                    <button class="btn success" onclick="return add_section(this)">add section</button>
+                  </div>
+                </div>
+                <div class="actions">
+                  <a id="verification_page" href="javascript:validationpage()" class="btn primary">1. Verification Page</a>
+                  <a id="generate_codes" href="javascript:generate()" class="btn primary">2. Generate Codes</a>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+          <div class="span6" style="background:#DDF4FB">
+            <h3>Copy and Paste these Scripts</h3>
+            <h5>Control and Tracking Script</h5>
+            <textarea rows="6" id="control_script" class="copy xlarge"></textarea>
+            <hr />
+            <h5>Sections</h5>
+            <div id="snippets"></div>
+          </div>
+        </div>
+      </div>
+
+      {% include footer.html %}
+
+    </div> <!-- /container -->
+    {% assign gwo_exp_id = '{{ gwo_exp_id }}' %}
+    {% assign ga_cusvar_idx = '{{ ga_cusvar_idx }}' %}
+    <textarea id="controltrackingcodetemp" style="display:none">
+{% include gwo-control-script.html %}
+{% include gwo-tracking-script.html %}
+    </textarea>
+  </body>
+</html>
+
