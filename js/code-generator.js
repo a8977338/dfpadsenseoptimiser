@@ -17,8 +17,10 @@ function extract()
 
 function validationpage()
 {
-  var eid = $('input#gwo_exp_id').val();
-  var aid = $('input#ga_pro_id').val();
+  extract();
+
+  var eid = $('input#exp_id').val();
+  var aid = $('input#ana_id').val();
   var sec = $('input.sections').map(function(i,e){return $(e).attr('name')+'='+$(e).val();}).get().join('&');
   var url = (eid && aid) ? '/code-generator.php?exp_id='+eid+'&ana_id='+aid+'&'+sec : '#';
   window.location.href = url;
