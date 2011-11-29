@@ -7,9 +7,8 @@ submenu:
   - { hook: "integration",  title: "Combining AdSense and Website Optimizer" }
   - { hook: "styling",      title: "Multivariate Ad Styling" }
   - { hook: "positioning",  title: "Multivariate Ad Positioning" }
+  - { hook: "premium",  title: "Optimizing Premium AdSense" }
   - { hook: "demo",         title: "Demo" }
-  - { hook: "tracking",     title: "Tracking Ad Click Conversion" }
-  - { hook: "analytics",    title: "Ignore all GWO reports" }
 ---
 ## Chapter 5 - Optimizing Google AdSense with Google Website Optimizer
 
@@ -84,6 +83,31 @@ ad_positions['bottom'] = { slot: "0123456789", width: 200, height: 200 }
 With this variation the same ad would be placed in the _bottom_ position instead of the _top_ one.
 
 There are many ways to achieve the same thing so you might want to experiment to find a solution that is more suitable to your situation. Javascript skill are required!
+
+### Optimizing Premium AdSense<a name="premium">&nbsp;</a>
+
+Testing style variations for premium AdSense is easier and more complex to do at the same time.
+
+As you are entirely in control over the style of your ad units you can change whatever you want. But because you can do almost everything things can easily grow out of hand.
+
+Consider [the example from chapter 5 - Using Google AdSense](/book/chapter-3-using-google-adsense.html#premium "the example from chapter 5 - Using Google AdSense"). The best way to provide style variations for this would be the use of stylesheets.
+
+For this you would have to make sure that the markup you use for the apps contains no inline styles and that each element is selectable via CSS selectors so you can apply rules to them.
+
+If all that is ensured you could define a variation like this.
+
+{% highlight html %}
+<style type="text/css">
+#googleads { width:614px; border-bottom: 1px solid #d2d2d2; padding:4px; text-align:left; }
+#googleads div { font-weight:bold; border-top: 1px solid #d2d2d2; padding:4px; padding: 0 0 2px; margin-bottom: 5px; color:#d2d2d2; }
+#googleads a:not(:first-child):not(:last-child) { font-weight:bold; color: #CC0000; font-family: Georgia, Times New Roman, serif; font-size:15px; }
+#googleads a:first-child { color:#666666; }
+#googleads span { font-weight:normal; font-size:12px; }
+#googleads a:last-child { font-weight:bold; font-size:12px; color:#666666; }
+</style>
+{% endhighlight %}
+
+> The above example could be much easier concerning the CSS selectors when the example markup would make use of more IDs and classes.
 
 ### Demo<a name="demo">&nbsp;</a>
 
