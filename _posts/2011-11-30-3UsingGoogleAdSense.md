@@ -8,7 +8,6 @@ submenu:
   - { hook: "styling",     title: "Dynamic Ad Styling" }
   - { hook: "premium",     title: "Premium AdSense" }
   - { hook: "sandbox",     title: "Sandbox Mode" }
-  - { hook: "demo",        title: "Demo" }
 ---
 ## Chapter 3 - Using Google AdSense
 
@@ -102,7 +101,7 @@ Notice that the above code is not doing anything that couldn't be done with the 
 
 ### Premium AdSense<a name="premium">&nbsp;</a>
 
-If you frequently generate 20 million ad impressions or more you will eventually get contacted by Google to become a premium publisher. There is no way to apply. Only if you generate some serious AdSense revenue will Google become interested in providing you with more support and options.
+If you frequently generate over 20 million page views or 5 million search queries you will eventually get contacted by Google to become a premium publisher. There is no way to apply. Only if you generate some serious AdSense revenue will Google become interested in providing you with more support and options.
 
 Being a premium publisher brings more options to influence the ad style than just the color scheme.
 
@@ -110,7 +109,54 @@ There are other options that let you influence the font sizes as well but the bi
 
 Usually AdSense adverts are served in an _iframe_ (and another _iframe_ therein) which takes it deliberately and completely takes the ad out of your control. This also has an effect on the outcome of this tutorial as tracking ad conversions becomes quite difficult as you will see in the next chapters. Premium publishers though can get their adverts in _div_ elements which allows to easily apply custom CSS rules.
 
-> Todo: give examples..
+Consider the following example.
+
+{% highlight html %}
+<div align="left">
+
+<script type="text/javascript" language="javascript">
+ function google_ad_request_done(google_ads) {
+  var s = '';
+  var i;
+
+  if (google_ads.length == 0) {
+   return;
+  }
+
+  s += '<div id="googleads" style="width:614px; border-bottom: 1px solid #d2d2d2; padding:4px; text-align:left;">';
+  s += '<div style="font-weight:bold; border-top: 1px solid #d2d2d2; padding:4px; padding: 0 0 2px; margin-bottom: 5px; color:#d2d2d2;"><br /><a target="_blank" href="'+google_info.feedback_url+'" style="color:#666666;">Google-Anzeige</a></div>';
+
+  for (i=0; i < google_ads.length; i++) {
+   s += '<a style="font-weight:bold; color: #CC0000; font-family: Georgia, Times New Roman, serif; font-size:15px;" href="' + google_ads[i].url + '" target="_blank">' + google_ads[i].line1 + '</a>&nbsp;';
+   s += '<span style="font-weight:normal; font-size:12px;">'+google_ads[i].line2 +' '+ google_ads[i].line3 + '</span>&nbsp;';
+   s += '<a style="font-weight:bold; font-size:12px; color:#666666;" href="' + google_ads[i].url + '" target="_blank">' + google_ads[i].visible_url + '</a><br /><table><tr><td height="2"></td></tr></table>';
+  }
+
+  s += '</div>';
+
+  document.write(s);
+  return;
+ }
+
+ google_ad_client = 'pub-1234567890123456';
+ google_ad_channel = '1234567890';
+ google_ad_output = 'js';
+ google_max_num_ads = '2';
+ google_skip = '2';
+ google_ad_type = 'text';
+ google_feedback = 'on';
+</script>
+<script language="JavaScript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+</div>
+{% endhighlight %}
+
+Instead of outputting the ad unit directly the AdSense script calls a callback (`google_ad_request_done(google_ads)`) to which it passes an array of ad units. Within this script - *that is controlled entirely by the publisher* - these ad units can be iterated over and ut into any kind of HTML markup.
+
+The above code would produce an advert like this.
+
+![Example premium AdSense ad unit](/img/example-premium-adsense-ad-unit.png "Example premium AdSense ad unit")
+
+You see that the style of a premium ad is only limited by your imagination, technical skill and of course the Google terms (when it comes to manipulation and such).
 
 ### Sandbox Mode<a name="sandbox">&nbsp;</a>
 
@@ -133,7 +179,3 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 {% endhighlight %}
 
 However there is no official documentation and the above code can not be guarantied to work. Please avoid self-inflicting ad clicks!
-
-### Demo<a name="demo">&nbsp;</a>
-
-> Todo: give examples..
