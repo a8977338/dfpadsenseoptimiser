@@ -2,56 +2,15 @@
 layout: "scenario"
 title: "Scenario 2 - Optimizing a Premium AdSense Integration"
 permalink: "/scenarios/scenario-2-optimizing-a-premium-adsense-integration.html"
-abstract: "This chapter provides a detailed but not at all technical step by step guide for the people operating the adverts. Start reading here if you to skip the background and get started right away."
-submenu:
-  - { hook: "setup",     title: "<strong>Setup</strong>" }
-  - { hook: "usage",     title: "<strong>Usage</strong>" }
-  - { hook: "step1",     title: "&nbsp;&nbsp;1. Prepare Ad Unit" }
-  - { hook: "step2",     title: "&nbsp;&nbsp;2. Create Experiment" }
-  - { hook: "step3",     title: "&nbsp;&nbsp;3. Create Variations" }
-  - { hook: "step4",     title: "&nbsp;&nbsp;4. Place Control Script" }
-  - { hook: "analysis",  title: "<strong>Analysis</strong>" }
+abstract: "If you happen to have over 20 million page views or 5 million search queries you might be invited by Google to join their premium membership. This allows you to do a lot more than the average AdSense account like being able to fully control not only the style but the markup of your ad units. If you are a premium member you can start reading here."
 ---
 ## Scenario 2 - Optimizing a Premium AdSense Integration
 
 {{ page.abstract }}
 
-### Setup<a name="setup">&nbsp;</a>
+{% capture recommendations %}{% include scenario/scenario-2-recommendations.md %}{% endcapture %}
+{% capture setup %}{% include scenario/scenario-2-setup.md %}{% endcapture %}
+{% capture usage %}{% include scenario/scenario-2-usage.md %}{% endcapture %}
+{% capture analyse %}{% include scenario/scenario-2-analyse.md %}{% endcapture %}
 
-...
-
-#### 1. Implement..<a name="step1">&nbsp;</a><span class="label warning">little technical skill required</span>
-
-...
-
----
-
-### Usage<a name="usage">&nbsp;</a>
-
-...
-
-#### 1. Prepare Ad Unit<a name="step1">&nbsp;</a><span class="label">no technical skill required</span>
-
-...
-
-#### 2. Create Experiment<a name="step2">&nbsp;</a><span class="label">no technical skill required</span>
-
-...
-
-#### 2. Fake Validation<a name="step2">&nbsp;</a><span class="label">no technical skill required</span>
-
-...
-
-#### 3. Create Variations<a name="step3">&nbsp;</a><span class="label">no technical skill required</span>
-
-...
-
-#### 4. Place Control Script<a name="step4">&nbsp;</a><span class="label">no technical skill required</span>
-
-...
-
----
-
-### Analysis<a name="analysis">&nbsp;</a>
-
-...
+{% include scenario/_tabs.html %}
