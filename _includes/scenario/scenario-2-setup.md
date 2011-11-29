@@ -22,7 +22,9 @@
 
 {% include scenario/setup/validation.md %}
 
-{% include scenario/setup/create-variations.md %}
+{% include scenario/setup/premium-sections.md %}
+
+{% include scenario/setup/create-premium-variations.md %}
 
 {% include scenario/setup/launch-your-experiment.md %}
 
