@@ -48,7 +48,7 @@ function generate()
 function add_section(element)
 {
   element = $(element);
-  section = element.parent().parent().prev();
+  section = element.parents('div.clearfix').prev().children('div.input').last();
   new_section = section.clone();
   new_section.find('input').val("");
   new_section.find('input').attr("class", "sections large");
@@ -61,7 +61,8 @@ function add_section(element)
 
 function remove_section(element)
 {
-  $(element).parent().parent().remove();
+  element = $(element);
+  element.parents('div.input').remove();
   return false;
 }
 
