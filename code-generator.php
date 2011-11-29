@@ -1,7 +1,7 @@
 <?php
 
 if (!$_GET['exp_id'] || !$_GET['exp_id'] || !$_GET['sections']) {
-  header('Location: /verification.html');
+  header('Location: /code-generator.html');
   exit();
 }
 
