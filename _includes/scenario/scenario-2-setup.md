@@ -1,4 +1,4 @@
-**Duration:** <span class="label notice">30-60 min</span>, **Technical skill required:** <span class="label notice">copy&paste will do</span>
+**Duration:** <span class="label success">30-60 min</span>, **Technical skill required:** <span class="label warning">understanding of CSS &amp; HTML</span>
 
 <div class="alert-message block-message info">
 <h3>Setup</h3>
