@@ -1,0 +1,64 @@
+---
+layout: false
+title: "7. Premium AdSense and GWO Integration via DFP"
+abstract: "Simple page with one AdSense premium advert on."
+permalink: "/demo/7-premium-adsense-and-gwo-integration-via-dfp.html"
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>{{ page.title }} &middot; Optimizing AdSense</title>
+  <meta name="description" content="{{ page.abstract }}" />
+  <meta name="author" content="Christian Schaefer caefer@ical.ly" />
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <link href="/css/all.css" rel="stylesheet">
+
+  <script type='text/javascript'>
+  (function() {
+  var useSSL = 'https:' == document.location.protocol;
+  var src = (useSSL ? 'https:' : 'http:') +
+  '//www.googletagservices.com/tag/js/gpt.js';
+  document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+  '//www.googletagservices.com/tag/js/gpt.js';
+  })();
+  </script>
+
+  <script type='text/javascript'>
+  googletag.defineSlot('/5947190/test_halfbanner_2_on_demo5', [234, 60], 'div-gpt-ad-1322062903460-0').addService(googletag.pubads());
+  googletag.pubads().enableSyncRendering();
+  googletag.pubads().enableSingleRequest();
+  googletag.enableServices();
+  </script>
+</head>
+<body>
+  <h1>{{ page.title }}</h1>
+  <p>{{ page.abstract }}</p>
+
+  <fieldset><legend>premium ad unit copied from www.brigitte.de</legend>
+
+    <!-- bri -->
+    <div id='div-gpt-ad-1322577208644-0' style='width:728px; height:90px;'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1322577208644-0'); });
+    </script>
+    </div>
+
+  </fieldset>
+  <script>
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script>
+  var pageTracker = _gat._getTracker("UA-4218775-5");
+  _gat._anonymizeIp();
+  pageTracker._initData();
+  pageTracker._setDomainName(document.domain);
+  //pageTracker._trackPageview();
+  </script>
+</body>
+</html>
