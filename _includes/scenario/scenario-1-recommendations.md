@@ -1,4 +1,4 @@
-**Duration:** <span class="label notice">0 min</span>, **Technical skill required:** <span class="label notice">none</span>
+**Duration:** <span class="label success">0 min</span>, **Technical skill required:** <span class="label success">none</span>
 
 <div class="alert-message block-message info">
 <h3>Recommendations</h3>
