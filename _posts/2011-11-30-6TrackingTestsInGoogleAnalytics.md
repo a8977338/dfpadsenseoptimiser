@@ -43,7 +43,7 @@ The other drawback is that you can not be entirely sure if tracking ad clicks co
 
 When you're a premium publisher you probably don't face the iframe problem and you could easily attach javascript event to the ads which you can use for tracking the reral clicks. Still the legal situation remains uncertain.
 
-This is not the recommended way to do it!
+**This is not the recommended way to do it!**
 
 #### 2. Ignore all GWO Reports<a name="ignore">&nbsp;</a>
 
@@ -53,10 +53,49 @@ If you already used Google AdSense before you will probably know that it can be 
 
 So the idea is to instead of using the Google Website Optimizer reporting to build segments in Google Analytics that represent the the current _test variation_ and then consult your Google Analytics web interface for a detailed report on AdSense Revenue per test variation.
 
-The drawback of this method is that GWO wil not be able to automatically select the best performaing variation so you have to do that manually after you terminated the experiment.
-However in Analytics you will have the AdSense revenue information which would not be available in the GWO reporting so your judgements will be based on much more relevant data.
+> The drawback of this method is that GWO wil not be able to automatically select the best performaing variation so you have to do that manually after you terminated the experiment.
+> However in Analytics you will have the AdSense revenue information which would not be available in the GWO reporting so your judgements will be based on much more relevant data.
 
 ### Recommended Setup<a name="recommended">&nbsp;</a>
 
-...
+Lets recap the key requirements.
+
+* Monitor AdSense CTR for each combination
+* Distinguish combinations for different parts of the website
+* Don't interfere with the site tracking (i.e. no additional pageviews)
+
+After experimenting with Custom Variables (which might clash with site settings) and Event Tracking (which can not be combined with AdSense metrics) the only reasonable way to track GWO data to Google Analytics is to use so called ***Social Interaction Analytics***.
+
+Consider the following code.
+
+{% highlight javascript %}
+var _gaq = _gaq || [];
+(function(_gaq){
+  var ga  = 'A-123456-1',
+      gwo = '1234567890',
+      e   = 'www.optimization-adsense.eu';
+  (function(fn) {
+    var d = document;
+    if(d.addEventListener) d.addEventListener('DOMContentLoaded', function(){ d.removeEventListener('DOMContentLoaded', arguments.callee, false); fn(); }, false);
+    else if(d.attachEvent) d.attachEvent('onreadystatechange', function(){ if(d.readyState === "complete"){ d.detachEvent('onreadystatechange', arguments.callee); fn(); }});
+  })(function(){
+    if (typeof(utmx) == "function" && typeof(utmx_global_vd) == "object") {
+      var c = (function(s,l){while(s.length<l) s='0'+s; return s;})(utmx('combination').toString(), 4);
+      var v = []; for (s in utmx_global_vd) { v.push( utmx("variation_number", s) ); }
+      var v = v.join(','), n = e+' '+gwo+'#'+c+' '+location.pathname.replace(/[^\/]+$/, '');
+      if(!(window._gaq instanceof Array)){
+        try{ _gat._getTracker(ga)._trackSocial(n, v); } catch(err) { }
+      }else{
+        _gaq.push(['_trackSocial', n, v]);
+      }
+    }
+  });
+})(_gaq);
+{% endhighlight %}
+
+This code will send a new pixel to your Google Analytics account that only tracks a "social activity" as soon as the document is fully loaded. It saves the current path and combination.
+
+You will be able to see the results like this.
+
+![Google Analytics Social Interaction view](/img/scenarios/ga-adsense-per-experiment-combination-and-path.png)
 
