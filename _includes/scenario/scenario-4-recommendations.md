@@ -15,6 +15,8 @@
 
 {% include scenario/recommendations/ensure-stylable-markup.md %}
 
+{% include scenario/recommendations/stylable-code-example.md %}
+
 {% include scenario/recommendations/create-the-premium-variations.md %}
 
 <div class="alert-message block-message info">

@@ -15,6 +15,7 @@
 </div>
 
 {% include scenario/setup/create-missing-accounts.md %}
+* [![DoubleClick For Publishers](/img/doubleclick-for-publishers-logo.png "DoubleClick For Publishers logo")](http://www.google.com/dfp "DoubleClick For Publishers homepage")
 
 {% include scenario/setup/connect-adsense-with-analytics.md %}
 
