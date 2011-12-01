@@ -2,56 +2,15 @@
 layout: "scenario"
 title: "Scenario 4 - Optimizing Premium AdSense over DFP"
 permalink: "/scenarios/scenario-4-optimizing-premium-adsense-over-dfp.html"
-abstract: "This chapter provides a detailed but not at all technical step by step guide for the people operating the adverts. Start reading here if you to skip the background and get started right away."
-submenu:
-  - { hook: "setup",     title: "<strong>Setup</strong>" }
-  - { hook: "usage",     title: "<strong>Usage</strong>" }
-  - { hook: "step1",     title: "&nbsp;&nbsp;1. Prepare Ad Unit" }
-  - { hook: "step2",     title: "&nbsp;&nbsp;2. Create Experiment" }
-  - { hook: "step3",     title: "&nbsp;&nbsp;3. Create Variations" }
-  - { hook: "step4",     title: "&nbsp;&nbsp;4. Place Control Script" }
-  - { hook: "analysis",  title: "<strong>Analysis</strong>" }
+abstract: "You own a premium AdSense account and use DoubleClick For Publishers (DFP)? Then this scenario is for you."
 ---
-## Scenario 3 - Optimizing through DoubleClick For Publishers
+## Scenario 4 - Optimizing Premium AdSense over DFP
 
 {{ page.abstract }}
 
-### Setup<a name="setup">&nbsp;</a>
+{% capture recommendations %}{% include scenario/scenario-4-recommendations.md %}{% endcapture %}
+{% capture setup %}{% include scenario/scenario-4-setup.md %}{% endcapture %}
+{% capture usage %}{% include scenario/scenario-4-usage.md %}{% endcapture %}
+{% capture analyse %}{% include scenario/scenario-4-analyse.md %}{% endcapture %}
 
-...
-
-#### 1. Implement..<a name="step1">&nbsp;</a><span class="label warning">little technical skill required</span>
-
-...
-
----
-
-### Usage<a name="usage">&nbsp;</a>
-
-...
-
-#### 1. Prepare Ad Unit<a name="step1">&nbsp;</a><span class="label">no technical skill required</span>
-
-...
-
-#### 2. Create Experiment<a name="step2">&nbsp;</a><span class="label">no technical skill required</span>
-
-...
-
-#### 2. Fake Validation<a name="step2">&nbsp;</a><span class="label">no technical skill required</span>
-
-...
-
-#### 3. Create Variations<a name="step3">&nbsp;</a><span class="label">no technical skill required</span>
-
-...
-
-#### 4. Place Control Script<a name="step4">&nbsp;</a><span class="label">no technical skill required</span>
-
-...
-
----
-
-### Analysis<a name="analysis">&nbsp;</a>
-
-...
+{% include scenario/_tabs.html %}
