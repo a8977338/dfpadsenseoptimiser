@@ -69,28 +69,9 @@ After experimenting with Custom Variables (which might clash with site settings)
 Consider the following code.
 
 {% highlight javascript %}
-var _gaq = _gaq || [];
-(function(_gaq){
-  var ga  = 'A-123456-1',
-      gwo = '1234567890',
-      e   = 'www.optimization-adsense.eu';
-  (function(fn) {
-    var d = document;
-    if(d.addEventListener) d.addEventListener('DOMContentLoaded', function(){ d.removeEventListener('DOMContentLoaded', arguments.callee, false); fn(); }, false);
-    else if(d.attachEvent) d.attachEvent('onreadystatechange', function(){ if(d.readyState === "complete"){ d.detachEvent('onreadystatechange', arguments.callee); fn(); }});
-  })(function(){
-    if (typeof(utmx) == "function" && typeof(utmx_global_vd) == "object") {
-      var c = (function(s,l){while(s.length<l) s='0'+s; return s;})(utmx('combination').toString(), 4);
-      var v = []; for (s in utmx_global_vd) { v.push( utmx("variation_number", s) ); }
-      var v = v.join(','), n = e+' '+gwo+'#'+c+' '+location.pathname.replace(/[^\/]+$/, '');
-      if(!(window._gaq instanceof Array)){
-        try{ _gat._getTracker(ga)._trackSocial(n, v); } catch(err) { }
-      }else{
-        _gaq.push(['_trackSocial', n, v]);
-      }
-    }
-  });
-})(_gaq);
+{% assign ga_pro_id = 'UA-1234567-8' %}
+{% assign gwo_exp_id = '12345678' %}
+{% include gwo-tracking-script.html %}
 {% endhighlight %}
 
 This code will send a new pixel to your Google Analytics account that only tracks a "social activity" as soon as the document is fully loaded. It saves the current path and combination.
