@@ -13,7 +13,7 @@
 
 {% include scenario/analyse/pick-combination.md %}
 
-{% include scenario/analyse/apply-best-performing-variations.md %}
+{% include scenario/analyse/apply-best-performing-premium-variations.md %}
 
 {% include scenario/analyse/end-experiment.md %}
 

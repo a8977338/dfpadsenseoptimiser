@@ -1,4 +1,4 @@
-**Duration:** <span class="label success">30-60 min</span>, **Technical skill required:** <span class="label success">copy&paste will do</span>
+**Duration:** <span class="label success">30-60 min</span>, **Technical skill required:** <span class="label warning">understanding of CSS &amp; HTML</span>
 
 <div class="alert-message block-message info">
 <h3>Setup</h3>
@@ -22,7 +22,9 @@
 
 {% include scenario/setup/validation.md %}
 
-{% include scenario/setup/create-variations.md %}
+{% include scenario/setup/premium-sections.md %}
+
+{% include scenario/setup/create-premium-variations.md %}
 
 {% include scenario/setup/launch-your-experiment.md %}
 
