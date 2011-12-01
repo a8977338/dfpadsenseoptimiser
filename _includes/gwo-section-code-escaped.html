@@ -1,0 +1,10 @@
+<script type="text/javascript" language="javascript">
+var _utmx_section_name = '{{ snippetname }}';
+
+var old_{{ callback }} = {{ callback }};
+{{ callback }} = function(){
+  utmx_section(_utmx_section_name);
+  if(utmx('variation_number', _utmx_section_name)) document.write('</nosc' + 'ript>');
+  return old_{{ callback }}.apply(this, arguments);
+};
+</script>

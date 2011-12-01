@@ -38,9 +38,12 @@ function generate()
 
   var snippets = $('#snippets');
   snippets.empty();
+  var sectioncode = $('#'+($('#escape').is(':checked') ? 'sectioncodeescapedtemp' : 'sectioncodetemp')).val()
+    .replace(/{{ callback }}/g, $('#callback').val());
+
   $('input.sections').each(function(i,e){
     var snippetname = $(e).val();
-    var snippet = '<h6>'+snippetname+'</h6><textarea rows="2" class="copy xlarge"><script>utmx_section("'+snippetname+'")<\/script>\n<\/noscript>\n<\/textarea>';
+    var snippet = '<h6>'+snippetname+'</h6><textarea rows="2" class="copy xlarge">'+sectioncode.replace(/{{ snippetname }}/g, snippetname)+'<\/textarea>';
     snippets.append(snippet);
   });
 }
