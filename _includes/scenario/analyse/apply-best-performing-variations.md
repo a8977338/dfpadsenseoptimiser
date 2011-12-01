@@ -1,6 +1,6 @@
 ### 4. Apply Best Performing Variations
 
-You can now apply these variation in one of two ways.
+You can now apply the best performing variation in one of two ways.
 
 #### 4.1 Change Ad Unit Style in AdSense
 

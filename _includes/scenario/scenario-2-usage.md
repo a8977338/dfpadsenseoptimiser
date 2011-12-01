@@ -1,4 +1,4 @@
-**Duration:** <span class="label success">15-30 min</span>, **Technical skill required:** <span class="label warning">understanding of CSS</span>
+**Duration:** <span class="label success">15-30 min</span>, **Technical skill required:** <span class="label warning">understanding of CSS, Javascript and HTML</span>
 
 <div class="alert-message block-message info">
 <h3>Usage</h3>
@@ -9,13 +9,13 @@
 <p>After following this chapter you will have successfully installed an AdSense experiment on a website. You can repeat this chapter for as many pages/sites as you require.</p>
 </div>
 
-{% include scenario/usage/copy-blueprint-experiment.md %}
+{% include scenario/usage/copy-premium-blueprint-experiment.md %}
 
 {% include scenario/usage/review-your-copy.md %}
 
 {% include scenario/usage/generate-code.md %}
 
-{% include scenario/usage/extend-adsense-code.md %}
+{% include scenario/usage/extend-premium-adsense-code.md %}
 
 {% include scenario/usage/run-your-experiment.md %}
 
