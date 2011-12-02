@@ -1,0 +1,53 @@
+<!-- INSERT CONTROL AND TRACKING CODE HERE -->
+
+<!-- 1. Default style information -->
+<style type="text/css">
+#googleads { width:614px; border-bottom: 1px solid #d2d2d2; padding:4px; text-align:left; }
+#googleads div { font-weight:bold; border-top: 1px solid #d2d2d2; padding:4px; padding: 0 0 2px; margin-bottom: 5px; color:#d2d2d2; }
+#googleads a.label { color:#666666; }
+#googleads a.ad_url { font-weight:bold; color: #CC0000; font-family: Georgia, Times New Roman, serif; font-size:15px; }
+#googleads span.ad_text { font-weight:normal; font-size:12px; }
+#googleads a.ad_visible_url { font-weight:bold; font-size:12px; color:#666666; }
+</style>
+
+<!-- 2. Callback to generate HTML markup for ad units -->
+<script type="text/javascript">
+ function google_ad_request_done(google_ads) {
+  var s = '';
+  var i;
+
+  if (google_ads.length == 0) {
+   return;
+  }
+
+  s += '<div id="googleads">';
+  s += '<div><br /><a target="_blank" href="'+google_info.feedback_url+'" class="label">Google-Anzeige</a></div>';
+ 
+  for (i=0; i < google_ads.length; i++) {
+   s += '<a class="ad_url" href="' + google_ads[i].url + '" target="_blank">' + google_ads[i].line1 + '</a>&nbsp;';
+   s += '<span class="ad_text">'+google_ads[i].line2 +' '+ google_ads[i].line3 + '</span>&nbsp;';
+   s += '<a class="ad_visible_url" href="' + google_ads[i].url + '" target="_blank">' + google_ads[i].visible_url + '</a><br /><table><tr><td height="2"></td></tr></table>';
+  }
+  
+  s += '</div>';
+
+  document.write(s);
+  return;
+ }
+ </script>
+
+<!-- 3. AdSense ad unit configuration -->
+<script type="text/javascript">
+ google_ad_client = 'pub-1234567890123456';
+ google_ad_channel = '1234567890';
+ google_ad_output = 'js';
+ google_max_num_ads = '2';
+ google_skip = '2';
+ google_ad_type = 'text';
+ google_feedback = 'on';
+</script>
+
+<!-- INSERT SECTION CODE HERE -->
+
+<!-- 4. AdSense ad call -->
+<script language="JavaScript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>

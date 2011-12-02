@@ -9,6 +9,8 @@
 <p>After following this chapter you will have successfully installed an AdSense experiment on a website. You can repeat this chapter for as many pages/sites as you require.</p>
 </div>
 
+> When working with DFP you will not have to change anything in your websites code. Instead you make the appropriate changes to the ad unit code within your DFP interface.
+
 {% include scenario/usage/copy-premium-blueprint-experiment.md %}
 
 {% include scenario/usage/review-your-copy.md %}
@@ -21,10 +23,4 @@
 
 <div class="alert-message block-message info">
   <h4>You should now have a live experiment on your website!</h4>
-  <p>Take a look at the following two demo pages and their source code to verify your settings.</p>
-  <br />
-  <ol>
-    <li><a href="/demo/1-default-adsense-integration.html">Default AdSense Integration</a></li>
-    <li><a href="/demo/2-default-adsense-and-gwo-integration.html">Default AdSense and GWO Integration</a></li>
-  </ol>
 </div>

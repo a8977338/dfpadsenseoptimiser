@@ -3,39 +3,7 @@
 The following ad unit code is copied from an existing DFP account.
 
 {% highlight html %}
-<script type="text/javascript" language="javascript">
- function google_ad_request_done(google_ads) {
-  var s = '';
-  var i;
-  
-  if (google_ads.length == 0) {
-   return;
-  }
- 
-  s += '<div id="googleads" style="width:614px; border-bottom: 1px solid #d2d2d2; padding:4px; text-align:left;">';
-  s += '<div style="font-weight:bold; border-top: 1px solid #d2d2d2; padding:4px; padding: 0 0 2px; margin-bottom: 5px; color:#d2d2d2;"><br /><a target="_blank" href="'+google_info.feedback_url+'" style="color:#666666;">Google-Anzeige</a></div>';
- 
-  for (i=0; i < google_ads.length; i++) {
-   s += '<a style="font-weight:bold; color: #CC0000; font-family: Georgia, Times New Roman, serif; font-size:15px;" href="' + google_ads[i].url + '" target="_blank">' + google_ads[i].line1 + '</a>&nbsp;';
-   s += '<span style="font-weight:normal; font-size:12px;">'+google_ads[i].line2 +' '+ google_ads[i].line3 + '</span>&nbsp;';
-   s += '<a style="font-weight:bold; font-size:12px; color:#666666;" href="' + google_ads[i].url + '" target="_blank">' + google_ads[i].visible_url + '</a><br /><table><tr><td height="2"></td></tr></table>';
-  }
-  
-  s += '</div>';
- 
-  document.write(s);
-  return;
- }
- 
- google_ad_client = 'pub-1234567890123456';
- google_ad_channel = '1234567890';
- google_ad_output = 'js';
- google_max_num_ads = '2';
-        google_skip = '2';
- google_ad_type = 'text';
- google_feedback = 'on';
-</script>
-<script language="JavaScript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+{% include premium-adsense-code-dirty.html %}
 {% endhighlight %}
 
 The above code will of course work but has a serious flaw that makes it unnecessarily complicated to multivariate.
@@ -49,55 +17,7 @@ But you could simply clear up the above code and extract the style informations 
 The result could look like this:
 
 {% highlight html %}
-<!-- 1. Default style information -->
-<style type="text/css">
-#googleads { width:614px; border-bottom: 1px solid #d2d2d2; padding:4px; text-align:left; }
-#googleads div { font-weight:bold; border-top: 1px solid #d2d2d2; padding:4px; padding: 0 0 2px; margin-bottom: 5px; color:#d2d2d2; }
-#googleads a.label { color:#666666; }
-#googleads a.ad_url { font-weight:bold; color: #CC0000; font-family: Georgia, Times New Roman, serif; font-size:15px; }
-#googleads span.ad_text { font-weight:normal; font-size:12px; }
-#googleads a.ad_visible_url { font-weight:bold; font-size:12px; color:#666666; }
-</style>
-
-<!-- 2. Callback to generate HTML markup for ad units -->
-<script type="text/javascript">
- function google_ad_request_done(google_ads) {
-  var s = '';
-  var i;
-
-  if (google_ads.length == 0) {
-   return;
-  }
-
-  s += '<div id="googleads">';
-  s += '<div><br /><a target="_blank" href="'+google_info.feedback_url+'" class="label">Google-Anzeige</a></div>';
- 
-  for (i=0; i < google_ads.length; i++) {
-   s += '<a class="ad_url" href="' + google_ads[i].url + '" target="_blank">' + google_ads[i].line1 + '</a>&nbsp;';
-   s += '<span class="ad_text">'+google_ads[i].line2 +' '+ google_ads[i].line3 + '</span>&nbsp;';
-   s += '<a class="ad_visible_url" href="' + google_ads[i].url + '" target="_blank">' + google_ads[i].visible_url + '</a><br /><table><tr><td height="2"></td></tr></table>';
-  }
-  
-  s += '</div>';
-
-  document.write(s);
-  return;
- }
- </script>
-
-<!-- 3. AdSense ad unit configuration -->
-<script type="text/javascript">
- google_ad_client = 'pub-1234567890123456';
- google_ad_channel = '1234567890';
- google_ad_output = 'js';
- google_max_num_ads = '2';
- google_skip = '2';
- google_ad_type = 'text';
- google_feedback = 'on';
-</script>
-
-<!-- 4. AdSense ad call -->
-<script language="JavaScript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+{% include premium-adsense-code-clean.html %}
 {% endhighlight %}
 
 Lets analyze the above code.

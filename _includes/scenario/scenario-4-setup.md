@@ -31,6 +31,12 @@
 
 {% include scenario/setup/stop-your-experiment.md %}
 
+### 8. Clean up your AdSense Code
+
+For the Usage chapter it is important that you cleaned up your AdSense codes beforehand to separate code from style information.
+
+{% include scenario/recommendations/stylable-code-example.md %}
+
 <div class="alert-message block-message info">
   <p style="text-align:center"><strong>The setup for your blueprint experiment is now completed. You can carry on with the Usage tab.</strong></p>
 </div>

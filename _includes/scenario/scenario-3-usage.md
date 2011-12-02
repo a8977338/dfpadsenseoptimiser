@@ -21,10 +21,4 @@
 
 <div class="alert-message block-message info">
   <h4>You should now have a live experiment on your website!</h4>
-  <p>Take a look at the following two demo pages and their source code to verify your settings.</p>
-  <br />
-  <ol>
-    <li><a href="/demo/1-default-adsense-integration.html">Default AdSense Integration</a></li>
-    <li><a href="/demo/2-default-adsense-and-gwo-integration.html">Default AdSense and GWO Integration</a></li>
-  </ol>
 </div>
