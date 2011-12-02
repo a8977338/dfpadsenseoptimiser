@@ -94,6 +94,7 @@ This is what it should look like afterwards.
 {% highlight html %}
 {% assign ga_pro_id = 'UA-1234567-8' %}
 {% assign gwo_exp_id = '12345678' %}
+{% include gwo-control-script.html %}
 {% include gwo-tracking-script.html %}
 
 <!-- 1. Default style information -->
